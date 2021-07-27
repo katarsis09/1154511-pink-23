@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Ekaterina Sadykova](https://up.htmlacademy.ru/adaptive/23/user/1154511).
-* Наставник: `Неизвестно`.
+* Наставник: [Семён Якушев](https://htmlacademy.ru/profile/id1118791).
 
 ---
 
