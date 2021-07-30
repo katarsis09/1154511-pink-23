@@ -1,12 +1,194 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <meta charset="UTF-8" />
+    <title>Приложение «PINK»</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/pink.svg" width="74" height="23" alt="Приложение «PINK»" />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a> Главная </a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html"> Фотографии </a>
+            </li>
+            <li class="site-list__item">
+              <a href="competition.html"> Конкурс </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#"> HTML Academy </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение «PINK» — взгляните на жизнь иначе</h1>
+      <section class="info">
+        <div class="info__wrapper">
+          <header class="info__header">
+            <h2 class="info__slogan">
+              Взгляните<br />
+              на жизнь<br />
+              иначе
+            </h2>
+          </header>
+          <a class="info__button" href="market.html">Скачать приложение</a>
+          <div class="info__systems">
+            <ul class="info__list systems-list">
+              <li class="visually-hidden">
+                <a href="iphone.html">iphone</a>
+              </li>
+              <li class="visually-hidden">
+                <a href="android.html">android</a>
+              </li>
+              <li class="visually-hidden">
+                <a href="windows.html">windows</a>
+              </li>
+            </ul>
+          </div>
+          <p class="info__description">
+            Доступно для iPhone, iPad, Android,<br />
+            Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages-wrapper">
+          <h2 class="advantages__title">
+            Устали от серости мегаполиса?<br />
+            Нам есть, что вам<br />
+            предложить!
+          </h2>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--mood">
+              <h3 class="advantages__heading">Поднимает настроение</h3>
+              <p class="advantages__intro">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item advantages__item--change">
+              <h3 class="advantages__heading">Меняет мир вокруг</h3>
+              <p class="advantages__intro">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item advantages__item--friends">
+              <h3 class="advantages__heading">Заводит новых друзей</h3>
+              <p class="advantages__intro">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзывы о нас</h2>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+              <div class="reviews__author-info">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </div>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <div class="reviews__author-info">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </div>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <div class="reviews__author-info">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </div>
+            </blockquote>
+            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+            <button class="reviews__next" type="button">Следующий отзыв</button>
+          </div>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="price">
+        <table class="price__table">
+          <tr class="price__stroke">
+            <td class="price__cell"></td>
+            <td class="price__cell">База<br />1,99 USD</td>
+            <td class="price__cell">Стандарт<br />3,99 USD</td>
+            <td class="price__cell">Анлим<br />9,99 USD</td>
+          </tr>
+          <tr class="price__stroke">
+            <td class="price__cell">Розовый фильтр</td>
+            <td class="price__cell">+</td>
+            <td class="price__cell">+</td>
+            <td class="price__cell">+</td>
+          </tr>
+          <tr class="price__stroke">
+            <td class="price__cell">Смайлики</td>
+            <td class="price__cell">-</td>
+            <td class="price__cell">+</td>
+            <td class="price__cell">+</td>
+          </tr>
+          <tr class="price__stroke">
+            <td class="price__cell">Комментарии</td>
+            <td class="price__cell">-</td>
+            <td class="price__cell">-</td>
+            <td class="price__cell">+</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts contacts">
+          <h3 class="contacts__title">Остались вопросы?<br />Свяжитесь с нами!</h3>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <b class="contacts__text" href="tel:+78125556666">Звоните:</b>
+              <a class="contacts__phone" href="tel:+78125556666"> <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66 </a>
+            </li>
+            <li class="contacts__item">
+              <b class="contacts__text">Пишите:</b>
+              <a class="contacts__email" href="mailto:mail@htmlacademy.ru"> <span class="contacts__email"></span> mail@htmlacademy.ru </a>
+            </li>
+            <li class="contacts__item">
+              <b class="contacts__text">Приезжайте в гости:</b>
+              <p class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+            </li>
+          </ul>
+        </div>
+        <div class="map">
+          <img class="map__image" src="img/map.png" width="320" height="200" alt="г. Санкт-Петербург, ул. Большая Конюшенная 19/8" />
+        </div>
+        <div class="page-footer__social social">
+          <img class="footer__logo" src="img/glasses_footer.svg" width="59" height="40" alt="логотип" />
+          <img class="footer__pink" src="img/pink_footer.svg" width="74" height="23" alt="логотип" />
+          <b class="social__title">Давайте дружить!</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">Твиттер</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy">Ютуб</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
