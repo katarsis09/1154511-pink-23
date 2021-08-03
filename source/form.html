@@ -15,14 +15,14 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a> Главная </a>
+            <li class="site-list__item site-list__item">
+              <a href="index.html"> Главная </a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html"> Фотографии </a>
+              <a href="catalog.html"> Фотографии </a>
             </li>
-            <li class="site-list__item">
-              <a href="competition.html"> Конкурс </a>
+            <li class="site-list__item--active">
+              <a> Конкурс </a>
             </li>
             <li class="site-list__item">
               <a href="#"> HTML Academy </a>
@@ -36,7 +36,7 @@
         путешествие с Пинк
       </h2>
     </header>
-    <main class="page-form">
+    <main class="form">
       <h2 class="form__title">
         Поделитесь своей историей и получите<br />
         шанс выиграть ценный приз — 1000 <br />
@@ -47,7 +47,7 @@
           <fieldset class="form__user">
             <p class="form__surname">
               <label class="form__surname" for="surname">Фамилия:</label>
-              <input class="user" id="name" type="text" name="user" placeholder="Укажите фамилию *" />
+              <input class="user" id="surname" type="text" name="user" placeholder="Укажите фамилию *" />
             </p>
             <p class="form__name">
               <label class="form__name" for="name">Имя:</label>
@@ -78,7 +78,7 @@
                   <label for="achievements__burned">Обгорел на пляже</label>
                 </li>
                 <li class="achievements__item">
-                  <input class="achievements__input" type="checkbox" name="achievements" id="achievements__chuck norris" checked />
+                  <input class="achievements__input" type="checkbox" name="achievements" id="achievements__chuck_norris" checked />
                   <label for="achievements__chuck norris">Видел Чака Норриса</label>
                 </li>
                 <li class="achievements__item">
@@ -98,16 +98,16 @@
           </div>
         </section>
         <section class="contacts">
-          <p class="contacts__number">
+          <p class="contacts__number number">
             <label class="number__phone" for="phone">Номер телефона:</label>
             <input class="number-input" id="phone" type="number" name="contact" placeholder="номер, пожалуйста" />
           </p>
-          <p class="email-user">
-            <label class="email" for="email">Адрес почты:</label>
+          <p class="contacts__email email">
+            <label class="email__user" for="email">Адрес почты:</label>
             <input class="email-input" id="email" type="email" name="contact" placeholder="введите почту *" />
           </p>
         </section>
-        <section class="form__interview">
+        <section class="interview">
           <h2 class="interview__title">
             С каким приложением<br />
             путешествовали?
@@ -129,10 +129,10 @@
               </li>
             </ul>
           </fieldset>
-          <section class="form__emotions">
-            <p class="form__message">
-              <label class="form__text" for="text">Опишите свои эмоции:</label>
-              <textarea class="text__message" id="text" name="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <section class="message">
+            <p class="message_title">
+              <label class="message__text" for="text">Опишите свои эмоции:</label>
+              <textarea class="message__emotion" id="text" name="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
           </section>
         </section>
@@ -141,8 +141,8 @@
         <small>* — обязательные поля</small>
       </div>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__social social">
+    <footer class="footer">
+      <div class="footer__social social">
         <img class="footer__logo" src="img/glasses_footer.svg" width="59" height="40" alt="логотип" />
         <img class="footer__pink" src="img/pink_footer.svg" width="74" height="23" alt="логотип" />
         <b class="social__title">Давайте дружить!</b>
@@ -158,7 +158,7 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
+      <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>

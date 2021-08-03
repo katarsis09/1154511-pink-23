@@ -15,14 +15,14 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a> Главная </a>
+            <li class="site-list__item site-list__item">
+              <a href="index.html"> Главная </a>
+            </li>
+            <li class="site-list__item--active">
+              <a> Фотографии </a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html"> Фотографии </a>
-            </li>
-            <li class="site-list__item">
-              <a href="competition.html"> Конкурс </a>
+              <a href="form.html"> Конкурс </a>
             </li>
             <li class="site-list__item">
               <a href="#"> HTML Academy </a>
@@ -32,7 +32,7 @@
       </nav>
       <h2 class="page-header__title">Фотографии пользователей</h2>
     </header>
-    <main class="page-catalog">
+    <main class="catalog">
       <h2 class="catalog__title">
         Взгляните на фотографии, которые<br />выкладывают пользователи!<br />
         Видите, как не хватает ваших?
@@ -50,7 +50,7 @@
             смотрите прямую трансляцию в<br />
             перископе, задавайте свои вопросы!
           </p>
-          <div class="catalog__rating">
+          <div class="catalog__rating rating">
             <img class="rating__icon" src="img/heart.svg" width="13" height="12" alt="heart" />
             <span class="raiting__like">Нравится: 215</span>
           </div>
@@ -66,7 +66,7 @@
             Вчера он на луну летал, сегодня в<br />
             руки к нам попал.
           </p>
-          <div class="catalog__rating">
+          <div class="catalog__rating rating">
             <img class="rating__icon" src="img/heart.svg" width="13" height="12" alt="heart" />
             <span class="raiting__like">Нравится: 356</span>
           </div>
@@ -79,7 +79,7 @@
             <span class="catalog__time">12 часов назад</span>
           </h2>
           <p class="catalog__description">Соседи будут рады!<br /></p>
-          <div class="catalog__rating">
+          <div class="catalog__rating rating">
             <img class="rating__icon" src="img/heart.svg" width="13" height="12" alt="heart" />
             <span class="raiting__like">Нравится: 666</span>
           </div>
@@ -92,7 +92,7 @@
             <span class="catalog__time">20 часов назад</span>
           </h2>
           <p class="catalog__description">Здесь могла быть ваша цитата о<br />высоком и вечном.</p>
-          <div class="catalog__rating">
+          <div class="catalog__rating rating">
             <img class="rating__icon" src="img/heart.svg" width="13" height="12" alt="heart" />
             <span class="raiting__like">Нравится: 215</span>
           </div>
@@ -105,7 +105,7 @@
             <span class="catalog__time">25 часов назад</span>
           </h2>
           <p class="catalog__description">Самая кубанская в мире!</p>
-          <div class="catalog__rating">
+          <div class="catalog__rating rating">
             <img class="rating__icon" src="img/heart.svg" width="13" height="12" alt="heart" />
             <span class="raiting__like">Нравится: 4</span>
           </div>
@@ -118,7 +118,7 @@
             <span class="catalog__time">40 часов назад</span>
           </h2>
           <p class="catalog__description">Где снег-то?</p>
-          <div class="catalog__rating">
+          <div class="catalog__rating rating">
             <img class="rating__icon" src="img/heart.svg" width="13" height="12" alt="heart" />
             <span class="raiting__like">Нравится: 150</span>
           </div>
@@ -131,7 +131,7 @@
             <span class="catalog__time">45 часов назад</span>
           </h2>
           <p class="catalog__description">Всем GM и взаимные лайки!</p>
-          <div class="catalog__rating">
+          <div class="catalog__rating rating">
             <img class="rating__icon" src="img/heart.svg" width="13" height="12" alt="heart" />
             <span class="raiting__like">Нравится: 2560</span>
           </div>
@@ -143,34 +143,46 @@
         Выкладывайте все, что накопилось в<br />телефоне!
       </h2>
 
-      <section class="upload">
-        <div class="upload-wrapper">
-          <img class="upload__img" src="img/photo-7-m.jpg" width="280" height="374" alt="Рассвет на заснеженной дороге" />
-          <ul class="upload__list">
-            <li class="upload__item">
-              <img class="upload__crop" src="img/crop.svg" width="44" height="44" alt="Обрезать фотографию" />
-            </li>
-            <li class="upload__item">
-              <img class="upload__fill" src="img/fill.svg" width="48" height="43" alt="Задать заливку" />
-            </li>
-            <li class="upload__item">
-              <img class="upload__contrast" src="img/contrast.svg" width="32" height="32" alt="Задать контраст" />
-            </li>
-          </ul>
+      <form class="catalog__upload upload" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="upload__gradient">
+          <legend class="visually-hidden">Обработка фотографии</legend>
+          <section class="upload__section">
+            <div class="upload-wrapper">
+              <img class="upload__img" src="img/photo-7-m.jpg" width="280" height="374" alt="Рассвет на заснеженной дороге" />
+              <ul class="upload__list icon">
+                <li class="upload__item">
+                  <input class="visually-hidden upload__radio" type="radio" name="upload" value="crop" id="upload__crop" checked />
+                  <label class="visually-hidden upload__crop" for="upload__crop">Обрезать фотографию</label>
+                  <img class="icon__crop" src="img/crop.svg" width="44" height="44" alt="Обрезать фотографию" />
+                </li>
+                <li class="upload__item">
+                  <input class="visually-hidden upload__radio" type="radio" name="upload" value="fill" id="upload__fill" />
+                  <label class="visually-hidden upload__fill" for="upload__fill">Задать заливку</label>
+                  <img class="icon__fill" src="img/fill.svg" width="48" height="43" alt="Задать заливку" />
+                </li>
+                <li class="upload__item">
+                  <input class="visually-hidden upload__radio" type="radio" name="upload" value="contrast" id="upload__contrast" />
+                  <label class="visually-hidden upload__contrast" for="upload__contrast">Задать контраст</label>
+                  <img class="icon__contrast" src="img/contrast.svg" width="32" height="32" alt="Задать контраст" />
+                </li>
+              </ul>
+            </div>
+          </section>
 
-          <form class="upload__range" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="upload__gradient">
-              <legend class="visually-hidden"></legend>
-              <input type="range" name="gradient" id="chose-gradient" min="0" max="100" />
-            </fieldset>
-          </form>
-        </div>
-        <button class="upload__publish" type="button">Запостить</button>
-        <button class="upload__cancel" type="button">Отмена</button>
-      </section>
+          <input type="range" name="gradient" id="gradient_crop" min="0" max="100" />
+          <label class="visually-hidden" for="gradient_crop">Обрезать фотографию</label>
+          <input type="range" name="gradient" id="gradient_fill" min="0" max="100" />
+          <label class="visually-hidden" for="gradient_fill">Задать заливку</label>
+          <input type="range" name="gradient" id="gradient_contrast" min="0" max="100" />
+          <label class="visually-hidden" for="gradient_contrast">Задать фон</label>
+        </fieldset>
+      </form>
+
+      <button class="upload__publish" type="button">Запостить</button>
+      <button class="upload__cancel" type="button">Отмена</button>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__social social">
+    <footer class="footer">
+      <div class="footer__social social">
         <img class="footer__logo" src="img/glasses_footer.svg" width="59" height="40" alt="логотип" />
         <img class="footer__pink" src="img/pink_footer.svg" width="74" height="23" alt="логотип" />
         <b class="social__title">Давайте дружить!</b>
@@ -186,7 +198,7 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
+      <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
