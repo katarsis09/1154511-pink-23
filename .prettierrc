@@ -1,4 +1,6 @@
 {
   "proseWrap": "never",
-  "printWidth": 500
+  "printWidth": 500,
+  "preferVoidTags": false
+
 }

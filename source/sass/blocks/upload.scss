@@ -1,0 +1,34 @@
+.upload {
+  background-color: #f2f2f2;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 41px;
+  padding-top: 20px;
+
+  &__button {
+    color: #d22856;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+
+    border-radius: 32px;
+    text-decoration: none;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    width: 100%;
+  }
+
+  &__img {
+    display: block;
+    object-fit: cover;
+  }
+
+  &__publish {
+    border: 3px solid #d22856;
+  }
+
+  &____cancel {
+    border: 3px solid #283645;
+    opacity: 0.1;
+  }
+}

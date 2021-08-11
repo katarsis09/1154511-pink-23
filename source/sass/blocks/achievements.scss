@@ -1,0 +1,35 @@
+.achievements {
+  &__wrapper {
+    background-color: #f2f2f2;
+    padding-bottom: 41px;
+    padding-top: 20px;
+  }
+
+
+  &__title {
+    padding-top: 42px;
+    padding-bottom: 44px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #d22856;
+  }
+
+  &__item {
+    margin-bottom: 69px;
+  }
+
+  &__label {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #283645;
+    margin-left: 22px;
+  }
+
+  &__list {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

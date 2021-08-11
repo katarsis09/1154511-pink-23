@@ -1,0 +1,32 @@
+.slider {
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  display: flex;
+  width: 44px;
+  justify-content: space-between;
+
+  &__toggle {
+    padding: 0;
+    width: 6px;
+    height: 6px;
+    border: 3px solid #283645;
+    opacity: 0.3;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__toggle--current {
+    display: block;
+    padding: 0;
+    width: 9px;
+    height: 9px;
+    border: 3px solid #283645;
+    opacity: 1;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
