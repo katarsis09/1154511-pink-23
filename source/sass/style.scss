@@ -1,6 +1,6 @@
 //Global
 @import "./global/common.scss";
-@import "./global/normalize.css";
+@import "./global/normalize.scss";
 @import "./global/fonts.scss";
 @import "./global/visually-hidden.scss";
 
@@ -11,15 +11,12 @@
 @import "./blocks/page-header.scss";
 @import "./blocks/page-wrapper.scss";
 @import "./blocks/info.scss";
-@import "./blocks/systems.scss";
 @import "./blocks/advantages.scss";
-@import "./blocks/advantages-wrapper.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/price.scss";
 @import "./blocks/slope.scss";
 @import "./blocks/map.scss";
 @import "./blocks/reviews.scss";
-@import "./blocks/social.scss";
 @import "./blocks/copyright.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/slider.scss";
