@@ -1,0 +1,20 @@
+.message {
+  padding-top: 40px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #d22856;
+
+  &__emotion {
+    margin-top: 22px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 197px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+}

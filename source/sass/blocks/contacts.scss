@@ -1,0 +1,27 @@
+.contacts {
+  text-align: left;
+
+
+  &__title {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 300;
+    padding-bottom: 45px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #283645;
+  }
+
+  &__data {
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 300;
+    color: #d22856;
+    padding-top: 13px;
+    padding-bottom: 31px;
+  }
+}

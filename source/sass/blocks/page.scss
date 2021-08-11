@@ -1,0 +1,38 @@
+.page {
+  font-size: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  line-height: 24px;
+  font-weight: 400;
+
+  &__body {
+    min-height: 100%;
+    margin: 0;
+  }
+
+  &__slogan {
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 29px;
+    padding-bottom: 320px;
+    margin: 0 auto;
+  }
+
+  &__slogan--index {
+    background-image: url("../img/phone.png");
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  &__slogan--form {
+    padding-bottom: 51px;
+  }
+
+  &__slogan--catalog {
+    padding-bottom: 84px;
+  }
+}
