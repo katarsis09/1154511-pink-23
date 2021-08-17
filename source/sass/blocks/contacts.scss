@@ -1,5 +1,5 @@
 .contacts {
-  text-align: left;
+  text-align: center;
 
 
   &__title {
@@ -23,5 +23,41 @@
     color: #d22856;
     padding-top: 13px;
     padding-bottom: 31px;
+  }
+
+  &__list {
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 80px 100px;
+      justify-content: space-around;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 98px;
+      justify-content: space-around;
+    }
+  }
+
+  &__location {
+    @media (min-width: $tablet-width) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      text-align: center;
+    }
   }
 }

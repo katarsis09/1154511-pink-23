@@ -1,0 +1,15 @@
+.opportunity {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 892px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    @media (min-width: $desktop-width) {
+      width: 252px;
+      text-align: center;
+    }
+  }
+}

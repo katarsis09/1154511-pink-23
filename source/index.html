@@ -24,13 +24,13 @@
                   <a> Главная </a>
                 </li>
                 <li class="site-list__item">
-                  <a href="catalog.html"> Фотографии </a>
+                  <a class="site-list__link" href="catalog.html"> Фотографии </a>
                 </li>
                 <li class="site-list__item">
-                  <a href="form.html"> Конкурс </a>
+                  <a class="site-list__link" href="form.html"> Конкурс </a>
                 </li>
                 <li class="site-list__item">
-                  <a href="#"> HTML Academy </a>
+                  <a class="site-list__link" href="#"> HTML Academy </a>
                 </li>
               </ul>
             </div>
@@ -44,7 +44,7 @@
               иначе!
             </h2>
           </div>
-
+          <img class="page__iphone" src="img/phone.png" width="320" height="286" alt="в руке телефон с розовым экраном" />
           <div class="page__info info">
             <a class="info__button" href="market.html">Скачать приложение</a>
             <div class="info__systems systems">
@@ -81,21 +81,31 @@
             Нам есть, что вам<br />
             предложить!
           </h2>
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--mood">
+          <div class="advantages__img img">
+            <img class="advantages__iphone" src="img/screen_1.png" width="186" height="382" alt="два мусорных бака, черно-белая фотография" />
+            <img class="advantages__pink" src="img/screen_2.png" width="186" height="382" alt="два мусорных бака в розовом фильтре" />
+            <img class="advantages__pink_smile" src="img/screen_3.png" width="186" height="382" alt="два мусорных бака, розовый фильтр и смайлик" />
+          </div>
+          <ul class="advantages__list opportunity">
+            <li class="advantages__item advantages__item--mood opportunity__item">
               <h3 class="advantages__heading">Поднимает настроение</h3>
               <p class="advantages__intro">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
-            <li class="advantages__item advantages__item--change">
+            <li class="advantages__item advantages__item--change opportunity__item">
               <h3 class="advantages__heading">Меняет мир вокруг</h3>
               <p class="advantages__intro">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
-            <li class="advantages__item advantages__item--friends">
+            <li class="advantages__item advantages__item--friends opportunity__item">
               <h3 class="advantages__heading">Заводит новых друзей</h3>
               <p class="advantages__intro">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img class="avantages__iphone" src="img/iphone_avantages.jpg" width="157" height="320" alt="два мусорных бака и смайлик" />
+        </section>
+        <section class="research">
+          <img class="research__img" src="img/timer.svg" width="238" height="276" alt="секундомер с цифрой 24" />
+          <h2 class="research__title">Эффект на 24 часа!</h2>
+          <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="research__link">Узнать больше об исследовании</a>
         </section>
         <section class="reviews">
           <div class="reviews__wrapper">
@@ -104,18 +114,21 @@
               <blockquote class="reviews__item slider__item">
                 <div class="reviews__author-info">
                   <cite class="reviews__author-name">Николай Петров</cite>
+                  <p class="reviews__author-data">25 лет, водитель трамвая</p>
                   <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                 </div>
               </blockquote>
               <blockquote class="reviews__item slider__item visually-hidden">
                 <div class="reviews__author-info">
                   <cite class="reviews__author-name">Николай Петров</cite>
+                  <p class="reviews__author-data">25 лет, водитель трамвая</p>
                   <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                 </div>
               </blockquote>
               <blockquote class="reviews__item slider__item visually-hidden">
                 <div class="reviews__author-info">
                   <cite class="reviews__author-name">Николай Петров</cite>
+                  <p class="reviews__author-data">25 лет, водитель трамвая</p>
                   <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                 </div>
               </blockquote>
@@ -188,7 +201,7 @@
                 <b class="contacts__text">Пишите:</b>
                 <a class="contacts__data contacts__email" href="mailto:mail@htmlacademy.ru"> <span class="contacts__email"></span> mail@htmlacademy.ru </a>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__location">
                 <b class="contacts__text">Приезжайте в гости:</b>
                 <p class="contacts__data contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
               </li>
@@ -198,8 +211,10 @@
             <img class="map__image" src="img/map.png" width="320" height="200" alt="г. Санкт-Петербург, ул. Большая Конюшенная 19/8" />
           </div>
           <div class="footer__social social">
-            <img class="footer__logo" src="img/glasses_footer.svg" width="59" height="40" alt="логотип" />
-            <img class="footer__pink" src="img/pink_footer.svg" width="74" height="23" alt="логотип" />
+            <div class="footer__logotype">
+              <img class="footer__logo" src="img/glasses_footer.svg" width="59" height="40" alt="логотип" />
+              <img class="footer__pink" src="img/pink_footer.svg" width="74" height="23" alt="логотип" />
+            </div>
             <b class="social__title visually-hidden">Давайте дружить!</b>
             <ul class="social__list">
               <li class="social__item">
@@ -218,12 +233,13 @@
                 </a>
               </li>
             </ul>
-          </div>
-          <div class="footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="copyright__html" src="img/html_academy.svg" width="27" height="34" alt="квадратная академическая шапочка" />
-            </a>
+
+            <div class="footer__copyright copyright">
+              <b class="copyright__text">Разработано:</b>
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <img class="copyright__html" src="img/html_academy.svg" width="27" height="34" alt="квадратная академическая шапочка" />
+              </a>
+            </div>
           </div>
         </div>
       </footer>

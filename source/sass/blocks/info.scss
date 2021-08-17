@@ -2,6 +2,10 @@
   background-color: #1d2631;
   color: #ffffff;
   padding: 28px 20px 38px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 
   &__button {
     color: #ffffff;
@@ -12,11 +16,25 @@
     border-radius: 29px;
     text-decoration: none;
     padding: 18px 36px;
+    text-align: center;
   }
 
   &__description {
     font-size: 14px;
     line-height: 24px;
     font-weight: 300;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 204px;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
   }
 }

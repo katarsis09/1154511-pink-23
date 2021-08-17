@@ -1,0 +1,13 @@
+.social {
+  &__list {
+    display: flex;
+    width: 172px;
+    justify-content: space-between;
+    margin-bottom: 53px;
+
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+}
