@@ -1,0 +1,17 @@
+.site-list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+    align-items: center;
+    color: #ffffff;
+  }
+
+  &__link {
+    @media (min-width: $desktop-width) {
+
+      color: #ffffff;
+    }
+  }
+}

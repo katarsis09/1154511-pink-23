@@ -3,6 +3,7 @@
 @import "./global/normalize.scss";
 @import "./global/fonts.scss";
 @import "./global/visually-hidden.scss";
+@import "./mixins/var.scss";
 
 
 // Blocks // Index
@@ -20,6 +21,12 @@
 @import "./blocks/copyright.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/slider.scss";
+@import "./blocks/research.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/img.scss";
+@import "./blocks/opportunity.scss";
 
 // Blocks // Catalog
 

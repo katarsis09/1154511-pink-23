@@ -1,10 +1,58 @@
 .advantages {
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 215px 650px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px 400px;
+  }
+
+
+  &__img {
+    @media (min-width: $desktop-width) {
+
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+  }
+
 
   &__wrapper {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  &__pink {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: inline-block;
+    }
+  }
+
 
   &__title {
     font-size: 24px;
@@ -12,10 +60,41 @@
     font-weight: 300;
     padding-top: 46px;
     padding-bottom: 70px;
+
+    @media (min-width: $tablet-width) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
   }
+
 
   &__list {
     list-style: none;
+
+    @media (min-width: $tablet-width) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      text-align: left;
+    }
+
+    @media (min-width: $desktop-width) {
+
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
   }
 
   &__heading {
@@ -30,5 +109,18 @@
     line-height: 24px;
     font-weight: 400;
     padding-bottom: 43px;
+  }
+
+
+  &__iphone {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: inline-block;
+    }
   }
 }
