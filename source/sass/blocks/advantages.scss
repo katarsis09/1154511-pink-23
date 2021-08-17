@@ -5,10 +5,6 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 215px 650px;
   }
@@ -16,10 +12,6 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 4;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 400px 400px 400px;
   }
@@ -27,7 +19,6 @@
 
   &__img {
     @media (min-width: $desktop-width) {
-
       grid-column-start: 1;
       grid-column-end: 4;
       grid-row-start: 2;

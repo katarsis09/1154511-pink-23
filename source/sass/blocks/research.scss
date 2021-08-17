@@ -8,10 +8,6 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 4;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px 130px 50px;
   }

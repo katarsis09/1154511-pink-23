@@ -8,7 +8,6 @@
 
   &__top {
     background-color: rgba(0, 0, 0, 0.3);
-
     padding-top: 21px;
     padding-bottom: 21px;
     display: flex;
@@ -19,10 +18,6 @@
   &__bottom {
     @media (min-width: $tablet-width) {
       display: grid;
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 3;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 100px 300px;
     }

@@ -30,10 +30,6 @@
 
     @media (min-width: $tablet-width) {
       display: grid;
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 3;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 80px 100px;
       justify-content: space-around;
@@ -41,10 +37,6 @@
 
     @media (min-width: $desktop-width) {
       display: grid;
-      grid-column-start: 1;
-      grid-column-end: 4;
-      grid-row-start: 1;
-      grid-row-end: 2;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 98px;
       justify-content: space-around;
