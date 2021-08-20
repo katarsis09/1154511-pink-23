@@ -31,4 +31,21 @@
     border: 3px solid #283645;
     opacity: 0.1;
   }
+
+  &__wrapper {
+    @media (min-width: $tablet-width) {
+
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+
+  &__list {
+    @media (min-width: $tablet-width) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+  }
 }

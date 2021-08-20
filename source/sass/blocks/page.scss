@@ -24,12 +24,6 @@
     grid-row-end: 2;
   }
 
-  &__slogan--index {
-    //background-image: url("../img/phone.png");
-    //background-repeat: no-repeat;
-    //background-size: contain;
-    //background-position: bottom;
-  }
 
   &__slogan--form {
     padding-bottom: 51px;
@@ -37,6 +31,11 @@
 
   &__slogan--catalog {
     padding-bottom: 84px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 81px;
+      padding-bottom: 143px;
+    }
   }
 
   &__iphone {

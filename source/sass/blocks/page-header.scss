@@ -11,7 +11,6 @@
     padding-top: 21px;
     padding-bottom: 21px;
     display: flex;
-
     justify-content: space-around;
   }
 
@@ -20,6 +19,12 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 100px 300px;
+    }
+  }
+
+  &--catalog {
+    .page-header__bottom {
+      display: block;
     }
   }
 }

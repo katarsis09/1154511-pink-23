@@ -8,7 +8,7 @@
   </head>
   <body class="page">
     <div class="page-wrapper">
-      <header class="page-header">
+      <header class="page-header page-header--catalog">
         <section class="page-header__top">
           <a class="page-header__logo">
             <img class="page-header__logo-image" src="img/pink.svg" width="74" height="23" alt="Приложение «PINK»" />
@@ -18,8 +18,8 @@
               <span class="visually-hidden">Открыть меню</span>
             </button>
             <div class="main-nav__wrapper">
-              <ul class="main-nav__list site-list ">
-                <li class="site-list__item ">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item">
                   <a> Главная </a>
                 </li>
                 <li class="site-list__item site-list__item--active">
@@ -45,31 +45,32 @@
     </div>
     <main class="catalog">
       <h2 class="catalog__title">
-        Взгляните на фотографии, которые<br />выкладывают пользователи!<br />
+        Взгляните на фотографии, которые выкладывают пользователи!
         Видите, как не хватает ваших?
       </h2>
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <img class="catalog__panorama" src="img/panorama-m.jpg" width="320" height="137" alt="Панорама дня" />
-          <div class="catalog__wrapper">
 
-            <h2 class="catalog__name">
-              Анна
-              <span class="catalog__time">(5 минут назад)</span>
-            </h2>
-            <p class="catalog__description">
-              Прыгать или нет? Напишите в<br />
-              комментарии свой совет и<br />
-              смотрите прямую трансляцию в<br />
-              перископе, задавайте свои вопросы!
-            </p>
-            <div class="catalog__rating rating">
-              <img class="rating__icon" src="img/heart.svg" width="13" height="12" alt="heart" />
-              <span class="rating__like">Нравится: 215</span>
-            </div>
+
+      <!--<li class="catalog__item panorama">
+        <img class="catalog__panorama panorama__img" src="img/panorama-m.jpg" width="320" height="137" alt="Панорама дня" />
+        <div class="catalog__wrapper">
+
+          <h2 class="catalog__name panorama__name">
+            Анна
+            <span class="catalog__time panorama__time">(5 минут назад)</span>
+          </h2>
+          <p class="catalog__description panorama__description">
+            Прыгать или нет? Напишите в
+            комментарии свой совет и
+            смотрите прямую трансляцию в
+            перископе, задавайте свои вопросы!
+          </p>
+          <div class="catalog__rating rating panorama__rating">
+            <img class="rating__icon" src="img/heart.svg" width="13" height="12" alt="heart" />
+            <span class="rating__like">Нравится: 215</span>
           </div>
-        </li>
-
+        </div>
+      </li>-->
+      <ul class="catalog__list">
         <li class="catalog__item">
           <img class="catalog__img" src="img/photo-1-m.jpg" width="280" height="180" alt="Белый автомобиль" />
           <div class="catalog__wrapper">
@@ -79,7 +80,7 @@
               <span class="catalog__time">(5 часов назад)</span>
             </h2>
             <p class="catalog__description">
-              Вчера он на луну летал, сегодня в<br />
+              Вчера он на луну летал, сегодня в
               руки к нам попал.
             </p>
 
@@ -114,7 +115,7 @@
               Борис
               <span class="catalog__time">(20 часов назад)</span>
             </h2>
-            <p class="catalog__description">Здесь могла быть ваша цитата о<br />высоком и вечном.</p>
+            <p class="catalog__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="catalog__rating rating">
               <img class="rating__icon" src="img/heart.svg" width="13" height="12" alt="heart" />
               <span class="rating__like">Нравится: 215</span>
@@ -187,30 +188,34 @@
                     <input class="visually-hidden upload__radio" type="radio" name="upload" value="crop" id="upload__crop" checked />
                     <label class="visually-hidden upload__crop" for="upload__crop">Обрезать фотографию</label>
                     <img class="icon__crop" src="img/crop.svg" width="44" height="44" alt="Обрезать фотографию" />
+                    <input type="range" name="gradient" id="gradient_crop" min="0" max="100" />
+                    <label class="visually-hidden" for="gradient_crop">Обрезать фотографию</label>
                   </li>
                   <li class="upload__item">
                     <input class="visually-hidden upload__radio" type="radio" name="upload" value="fill" id="upload__fill" />
                     <label class="visually-hidden upload__fill" for="upload__fill">Задать заливку</label>
                     <img class="icon__fill" src="img/fill.svg" width="48" height="43" alt="Задать заливку" />
+                    <input type="range" name="gradient" id="gradient_fill" min="0" max="100" />
+                    <label class="visually-hidden" for="gradient_fill">Задать заливку</label>
                   </li>
                   <li class="upload__item">
                     <input class="visually-hidden upload__radio" type="radio" name="upload" value="contrast" id="upload__contrast" />
                     <label class="visually-hidden upload__contrast" for="upload__contrast">Задать контраст</label>
                     <img class="icon__contrast" src="img/contrast.svg" width="32" height="32" alt="Задать контраст" />
+                    <input type="range" name="gradient" id="gradient_contrast" min="0" max="100" />
+                    <label class="visually-hidden" for="gradient_contrast">Задать фон</label>
                   </li>
                 </ul>
+                <button class="upload__button upload__publish" type="submit">Запостить</button>
+                <button class="upload__button upload__cancel" type="reset">Отмена</button>
               </div>
             </section>
 
-            <input type="range" name="gradient" id="gradient_crop" min="0" max="100" />
-            <label class="visually-hidden" for="gradient_crop">Обрезать фотографию</label>
-            <input type="range" name="gradient" id="gradient_fill" min="0" max="100" />
-            <label class="visually-hidden" for="gradient_fill">Задать заливку</label>
-            <input type="range" name="gradient" id="gradient_contrast" min="0" max="100" />
-            <label class="visually-hidden" for="gradient_contrast">Задать фон</label>
 
-          <button class="upload__button upload__publish" type="submit">Запостить</button>
-          <button class="upload__button upload__cancel" type="reset">Отмена</button>
+
+
+
+
           </fieldset>
         </form>
       </div>
