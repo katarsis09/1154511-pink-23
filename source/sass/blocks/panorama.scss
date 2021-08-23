@@ -1,0 +1,17 @@
+.panorama {
+  &__rating {
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__description {
+    @media (min-width: $tablet-width) {
+      order: 4;
+    }
+  }
+}

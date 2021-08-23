@@ -50,8 +50,8 @@
       </h2>
 
 
-      <!--<li class="catalog__item panorama">
-        <img class="catalog__panorama panorama__img" src="img/panorama-m.jpg" width="320" height="137" alt="Панорама дня" />
+      <li class="catalog__panorama panorama">
+        <img class="panorama__img" src="img/panorama-m.jpg" width="320" height="137" alt="Панорама дня" />
         <div class="catalog__wrapper">
 
           <h2 class="catalog__name panorama__name">
@@ -69,10 +69,10 @@
             <span class="rating__like">Нравится: 215</span>
           </div>
         </div>
-      </li>-->
+      </li>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <img class="catalog__img" src="img/photo-1-m.jpg" width="280" height="180" alt="Белый автомобиль" />
+          <img class="catalog__img" src="img/photo-1-m.jpg" width="100%" height="180" alt="Белый автомобиль" />
           <div class="catalog__wrapper">
 
             <h2 class="catalog__name">
@@ -92,7 +92,7 @@
         </li>
 
         <li class="catalog__item">
-          <img class="catalog__img" src="img/photo-2-m.jpg" width="280" height="180" alt="Барабанная установка" />
+          <img class="catalog__img" src="img/photo-2-m.jpg" width="100%" height="180" alt="Барабанная установка" />
           <div class="catalog__wrapper">
 
             <h2 class="catalog__name">
@@ -108,7 +108,7 @@
         </li>
 
         <li class="catalog__item">
-          <img class="catalog__img" src="img/photo-3-m.jpg" width="280" height="180" alt="Панорамная крыша здания" />
+          <img class="catalog__img" src="img/photo-3-m.jpg" width="100%" height="180" alt="Панорамная крыша здания" />
           <div class="catalog__wrapper">
 
             <h2 class="catalog__name">
@@ -124,7 +124,7 @@
         </li>
 
         <li class="catalog__item">
-          <img class="catalog__img" src="img/photo-4-m.jpg" width="280" height="180" alt="Рынок Кубанская бахча" />
+          <img class="catalog__img" src="img/photo-4-m.jpg" width="100%" height="180" alt="Рынок Кубанская бахча" />
           <div class="catalog__wrapper">
 
             <h2 class="catalog__name">
@@ -140,7 +140,7 @@
         </li>
 
         <li class="catalog__item">
-          <img class="catalog__img" src="img/photo-5-m.jpg" width="280" height="180" alt="Где-то в горах" />
+          <img class="catalog__img" src="img/photo-5-m.jpg" width="100%" height="180" alt="Где-то в горах" />
           <div class="catalog__wrapper">
 
             <h2 class="catalog__name">
@@ -156,7 +156,7 @@
         </li>
 
         <li class="catalog__item">
-          <img class="catalog__img" src="img/photo-6-m.jpg" width="280" height="180" alt="Фото рассвета из иллюминатора самолета" />
+          <img class="catalog__img" src="img/photo-6-m.jpg" width="100%" height="180" alt="Фото рассвета из иллюминатора самолета" />
           <div class="catalog__wrapper">
 
             <h2 class="catalog__name">
@@ -177,12 +177,12 @@
         Выкладывайте все, что накопилось в<br />телефоне!
       </h2>
       <div class="upload">
-        <form class="catalog__upload upload__wrapper" method="get" action="https://echo.htmlacademy.ru">
+        <form class="catalog__upload" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="upload__gradient">
             <legend class="visually-hidden">Обработка фотографии</legend>
             <section class="upload__section">
-              <div class="upload-wrapper">
-                <img class="upload__img" src="img/photo-7-m.jpg" width="280" height="374" alt="Рассвет на заснеженной дороге" />
+              <div class="upload__wrapper">
+                <img class="upload__img" src="img/photo-7-m.jpg" width="100%" height="374" alt="Рассвет на заснеженной дороге" />
                 <ul class="upload__list icon">
                   <li class="upload__item">
                     <input class="visually-hidden upload__radio" type="radio" name="upload" value="crop" id="upload__crop" checked />
@@ -206,8 +206,11 @@
                     <label class="visually-hidden" for="gradient_contrast">Задать фон</label>
                   </li>
                 </ul>
-                <button class="upload__button upload__publish" type="submit">Запостить</button>
-                <button class="upload__button upload__cancel" type="reset">Отмена</button>
+                <div class="upload__option">
+                  <button class="upload__button upload__publish" type="submit">Запостить</button>
+                  <button class="upload__button upload__cancel" type="reset">Отмена</button>
+                </div>
+
               </div>
             </section>
 
@@ -222,8 +225,10 @@
     </main>
     <footer class="footer">
       <div class="footer__social social">
-        <img class="footer__logo" src="img/glasses_footer.svg" width="59" height="40" alt="логотип" />
-        <img class="footer__pink" src="img/pink_footer.svg" width="74" height="23" alt="логотип" />
+        <div class="footer__logotype">
+          <img class="footer__logo" src="img/glasses_footer.svg" width="59" height="40" alt="логотип" />
+          <img class="footer__pink" src="img/pink_footer.svg" width="74" height="23" alt="логотип" />
+        </div>
         <b class="social__title visually-hidden">Давайте дружить!</b>
         <ul class="social__list">
           <li class="social__item">
@@ -238,17 +243,17 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy">
-
               <img class="social__youtube" src="img/youtube.svg" width="48" height="48" alt="иконка проигрывателя в виде треугольника" />
             </a>
           </li>
         </ul>
-      </div>
-      <div class="footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__html" src="img/html_academy.svg" width="27" height="34" alt="квадратная академическая шапочка" />
-        </a>
+
+        <div class="footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__html" src="img/html_academy.svg" width="27" height="34" alt="квадратная академическая шапочка" />
+          </a>
+        </div>
       </div>
     </div>
     </footer>

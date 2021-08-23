@@ -52,7 +52,7 @@
       </h2>
       <div class="form__wrapper">
         <form class="form__login" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__user">
+          <fieldset class="form__box">
             <p class="form__info">
               <label class="form__surname form__data" for="surname">Фамилия:</label>
               <input class="form__user" id="surname" type="text" name="user" placeholder="Укажите фамилию *" />
@@ -106,12 +106,12 @@
         </section>
         <section class="form__contacts contacts">
           <p class="contacts__number contacts__info">
-            <label class="number__phone form__data" for="phone">Номер телефона:</label>
-            <input class="number-input form__user" id="phone" type="number" name="contact" placeholder="Номер, пожалуйста" />
+            <label class="number__phone form__data form__data--contacts" for="phone">Номер телефона:</label>
+            <input class="number-input form__user form__user--contacts" id="phone" type="number" name="contact" placeholder="Номер, пожалуйста" />
           </p>
           <p class="contacts__email contacts__info">
-            <label class="email__user form__data--contacts" for="email">Адрес почты:</label>
-            <input class="email-input form__user" id="email" type="email" name="contact" placeholder="Введите почту *" />
+            <label class="email__user form__data form__data--contacts" for="email">Адрес почты:</label>
+            <input class="email-input form__user form__user--contacts" id="email" type="email" name="contact" placeholder="Введите почту *" />
           </p>
         </section>
         <section class="form__interview interview">
@@ -143,11 +143,11 @@
             <textarea class="message__emotion" id="text" name="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </p>
         </section>
-        <div class="form__bottom">  
+        <div class="form__bottom">
           <button class="form__button" type="submit">Отправить форму</button>
           <small class="form__remark">* — обязательные поля</small>
         </div>
-       
+
       </div>
     </main>
     <footer class="footer">
