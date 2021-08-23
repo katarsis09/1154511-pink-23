@@ -23,8 +23,19 @@
   }
 
   &--catalog {
+
+    @media (min-width: $tablet-width) {
     .page-header__bottom {
       display: block;
+    }
+    }
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+    .page-header__bottom {
+      display: block;
+    }
     }
   }
 }

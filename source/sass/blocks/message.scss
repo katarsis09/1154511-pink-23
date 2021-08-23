@@ -16,5 +16,11 @@
     font-size: 18px;
     line-height: 30px;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      width: 496px;
+      
+    }
+
   }
 }

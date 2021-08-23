@@ -27,6 +27,14 @@
 
   &__slogan--form {
     padding-bottom: 51px;
+    @media (min-width: $tablet-width) {
+      width: 300px;
+      margin: 0 auto;
+    }
+    @media (min-width: $desktop-width) {
+      width: 400px;
+    }
+    
   }
 
   &__slogan--catalog {

@@ -6,6 +6,12 @@
   &__login {
     padding-left: 20px;
     padding-right: 20px;
+
+    @media (min-width: $desktop-width) {
+      width: 336px;
+      margin-right: 74px;
+    }
+    
   }
 
 
@@ -14,21 +20,45 @@
     font-weight: 400;
     padding: 54px 20px 60px 20px;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      width: 490px;
+      margin: 0 auto;
+    }
   }
 
   &__data {
     color: #d22856;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 20px;
+
+    }
+    &--contacts {
+      @media (min-width: $tablet-width) {
+        order: 2;
+
   }
+}
+
+  }
+
 
   &__user {
     font-size: 18px;
     color: #283645;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
-    width: 100%;
+    //width: 100%;
     padding-top: 23px;
     padding-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
+
+   
   }
 
   &__button {
@@ -42,6 +72,21 @@
     border: 2px solid #2aab6d;
     border-radius: 1px;
     color: #ffffff;
+
+     @media (min-width: $tablet-width) {
+       width: 296px;
+     }
+    
+  }
+
+  &__bottom {
+    @media (min-width: $tablet-width) {
+      order: 6;
+      display: flex;
+      justify-content: space-between;
+      
+    }
+
   }
 
   &__remark {
@@ -50,10 +95,70 @@
     line-height: 30px;
     color: #283645;
     text-align: center;
+    
+  }
+ 
+  
+
+  &__message {
+    @media (min-width: $tablet-width) {
+      order: 5;
+      width: 622px;
+    }
   }
 
   &__contacts {
     padding-left: 20px;
     padding-right: 20px;
+    @media (min-width: $tablet-width) {
+      order: 3;
+      width: 622px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 936px;
+      display: flex;
+      margin: 0 auto;
+      border: 1px solid #e5e5e5 ;
+    }
+
   }
+
+  &__info {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: center;
+      order: 1;
+      width: 622px;
+
+  }
+}
+
+  &__interview {
+    @media (min-width: $tablet-width) {
+      order: 2;
+      width: 622px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 431px;
+      
+    }
+  }
+ 
+ 
+
+  &__wrapper {
+    @media (min-width: $tablet-width) {
+  display: flex;
+  flex-wrap: wrap;
+  }
+}
+
+&__achievements {
+  @media (min-width: $tablet-width) {
+    order: 4;
+    width: 622px;
+  }
+}
 }
