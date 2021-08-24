@@ -21,14 +21,54 @@
   &__img {
     display: block;
     object-fit: cover;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  &__option {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 
   &__publish {
     border: 3px solid #d22856;
+
+    @media (min-width: $desktop-width) {
+      display: inline-block;
+      width: 183px;
+    }
   }
 
-  &____cancel {
+  &__cancel {
     border: 3px solid #283645;
     opacity: 0.1;
+
+    @media (min-width: $desktop-width) {
+      display: inline-block;
+      width: 183px;
+    }
+  }
+
+  &__wrapper {
+    @media (min-width: $tablet-width) {
+
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+
+  &__list {
+    @media (min-width: $tablet-width) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
   }
 }

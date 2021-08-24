@@ -2,13 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Приложение «PINK»</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page">
     <div class="page-wrapper">
-      <header class="page-header">
+      <header class="page-header page-header--form">
         <section class="page-header__top">
           <a class="page-header__logo">
             <img class="page-header__logo-image" src="img/pink.svg" width="74" height="23" alt="Приложение «PINK»" />
@@ -18,7 +18,7 @@
               <span class="visually-hidden">Открыть меню</span>
             </button>
             <div class="main-nav__wrapper">
-              <ul class="main-nav__list site-list ">
+              <ul class="main-nav__list site-list">
                 <li class="site-list__item">
                   <a> Главная </a>
                 </li>
@@ -38,7 +38,6 @@
 
         <section class="page-header__bottom">
           <div class="page__wrapper">
-
             <h2 class="page__slogan page__slogan--form">Конкурс на самое безбашенное путешествие с Пинк</h2>
           </div>
         </section>
@@ -52,16 +51,16 @@
       </h2>
       <div class="form__wrapper">
         <form class="form__login" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__user">
-            <p class="form__surname">
+          <fieldset class="form__box">
+            <p class="form__info">
               <label class="form__surname form__data" for="surname">Фамилия:</label>
               <input class="form__user" id="surname" type="text" name="user" placeholder="Укажите фамилию *" />
             </p>
-            <p class="form__name">
-              <label class="form__name  form__data" for="name">Имя:</label>
+            <p class="form__info">
+              <label class="form__name form__data" for="name">Имя:</label>
               <input class="form__user" id="name" type="text" name="user" placeholder="Введите ваше имя *" />
             </p>
-            <p class="form__patronymic">
+            <p class="form__info">
               <label class="form__patronymic form__data" for="patronymic">Отчество:</label>
               <input class="form__user" id="patronymic" type="text" name="user" placeholder="Ну и отчество тоже" />
             </p>
@@ -104,17 +103,17 @@
             </fieldset>
           </div>
         </section>
-        <section class="form__contacts contacts">
-          <p class="contacts__number number">
-            <label class="number__phone form__data" for="phone">Номер телефона:</label>
-            <input class="number-input form__user" id="phone" type="number" name="contact" placeholder="Номер, пожалуйста" />
+        <section class="form__contacts contacts number">
+          <p class="contacts__number contacts__info">
+            <label class="number__phone form__data form__data--contacts" for="phone">Номер телефона:</label>
+            <input class="number-input form__user form__user--contacts" id="phone" type="number" name="contact" placeholder="Номер, пожалуйста" />
           </p>
-          <p class="contacts__email email">
-            <label class="email__user form__data" for="email">Адрес почты:</label>
-            <input class="email-input form__user" id="email" type="email" name="contact" placeholder="Введите почту *" />
+          <p class="contacts__email contacts__info email">
+            <label class="email__user form__data form__data--contacts" for="email">Адрес почты:</label>
+            <input class="email-input form__user form__user--contacts" id="email" type="email" name="contact" placeholder="Введите почту *" />
           </p>
         </section>
-        <section class="interview">
+        <section class="form__interview interview">
           <h2 class="interview__title">
             С каким приложением<br />
             путешествовали?
@@ -136,22 +135,25 @@
               </li>
             </ul>
           </fieldset>
-          <section class="message">
-            <p class="message__title">
-              <label class="message__text" for="text">Опишите свои эмоции:</label>
-              <textarea class="message__emotion" id="text" name="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </p>
-          </section>
         </section>
-
-        <button class="form__button" type="submit">Отправить форму</button>
-        <small class="form__remark">* — обязательные поля</small>
+        <section class="form__message message">
+          <p class="message__title">
+            <label class="message__text" for="text">Опишите свои эмоции:</label>
+            <textarea class="message__emotion" id="text" name="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </p>
+        </section>
+        <div class="form__bottom">
+          <button class="form__button" type="submit">Отправить форму</button>
+          <small class="form__remark">* — обязательные поля</small>
+        </div>
       </div>
     </main>
     <footer class="footer">
       <div class="footer__social social">
-        <img class="footer__logo" src="img/glasses_footer.svg" width="59" height="40" alt="логотип" />
-        <img class="footer__pink" src="img/pink_footer.svg" width="74" height="23" alt="логотип" />
+        <div class="footer__logotype">
+          <img class="footer__logo" src="img/glasses_footer.svg" width="59" height="40" alt="логотип" />
+          <img class="footer__pink" src="img/pink_footer.svg" width="74" height="23" alt="логотип" />
+        </div>
         <b class="social__title visually-hidden">Давайте дружить!</b>
         <ul class="social__list">
           <li class="social__item">
@@ -166,19 +168,18 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy">
-
               <img class="social__youtube" src="img/youtube.svg" width="48" height="48" alt="иконка проигрывателя в виде треугольника" />
             </a>
           </li>
         </ul>
+
+        <div class="footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__html" src="img/html_academy.svg" width="27" height="34" alt="квадратная академическая шапочка" />
+          </a>
+        </div>
       </div>
-      <div class="footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__html" src="img/html_academy.svg" width="27" height="34" alt="квадратная академическая шапочка" />
-        </a>
-      </div>
-    </div>
     </footer>
   </body>
 </html>

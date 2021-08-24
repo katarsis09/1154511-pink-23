@@ -16,5 +16,19 @@
     font-size: 18px;
     line-height: 30px;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      width: 496px;
+    }
+  }
+
+  &__text {
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
   }
 }
