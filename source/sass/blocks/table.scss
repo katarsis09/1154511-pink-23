@@ -1,0 +1,90 @@
+.table {
+  &__cell {
+    border: 1px solid #f5f5f5;
+    color: #ffffff;
+    background-color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      height: 45px;
+      width: 152px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 59px;
+      width: 234px;
+    }
+  }
+
+  &__heading {
+    @media (min-width: $tablet-width) {
+      height: 78px;
+      width: 152px;
+    }
+  }
+
+  &__option {
+    color: #283645;
+
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+      line-height: 30px;
+      padding-left: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      line-height: 30px;
+      padding-left: 22px;
+    }
+  }
+
+  &__tariff {
+    color: #ffffff;
+    background-color: #283645;
+    text-align: center;
+  }
+
+  &__price {
+    display: block;
+    line-height: 30px;
+    font-weight: 300;
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+
+      font-size: 24px;
+      padding-bottom: 25px;
+    }
+  }
+
+  &__name {
+    display: block;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 30px;
+
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      font-weight: 30px;
+      padding-top: 23px;
+    }
+  }
+
+  &__icon {
+
+    display: block;
+    margin: 0 auto;
+  }
+}

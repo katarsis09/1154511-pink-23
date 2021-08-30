@@ -1,16 +1,61 @@
 .site-list {
+
+  position: relative;
+  //display: block;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #283645;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 620px;
-    margin: 0 auto;
-    align-items: center;
-    color: #ffffff;
+    background-color: transparent;
+    text-transform: inherit;
+    box-shadow: none;
   }
+
+
+  &__item--header {
+    height: 69px;
+    padding-left: 20px;
+    box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
 
   &__link {
     @media (min-width: $desktop-width) {
       color: #ffffff;
     }
+  }
+
+  &__item a {
+
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    padding-top: 15px;
+    padding-bottom: 16px;
+
+    @media (min-width: $desktop-width) {
+      line-height: 18px;
+      font-weight: 400;
+      box-shadow: none;
+    }
+  }
+
+  &__item--header a {
+    padding-bottom: 21px;
+    padding-top: 22px;
   }
 }
