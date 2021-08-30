@@ -1,22 +1,48 @@
 .info {
   background-color: #1d2631;
   color: #ffffff;
-  padding: 28px 20px 38px;
+  padding: 28px 20px 30px;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
 
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+
   &__button {
     color: #ffffff;
     font-size: 18px;
     line-height: 18px;
-    font-weight: 400;
+    font-weight: 700;
     border: 3px solid #ffffff;
     border-radius: 29px;
     text-decoration: none;
-    padding: 18px 36px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    margin-bottom: 32px;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+      margin: 0 auto;
+      margin-bottom: 46px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 300px;
+      font-size: 21px;
+
+      margin: 0;
+      margin-bottom: 69px;
+    }
   }
 
   &__description {
@@ -24,6 +50,16 @@
     line-height: 24px;
     font-weight: 300;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      margin-top: 27px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 300px;
+      padding-top: 18px;
+    }
   }
 
   &__list {
@@ -36,5 +72,14 @@
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
+  }
+
+  &__systems {
+    margin-bottom: 16px;
+
+
+    @media (min-width: $desktop-width) {
+      width: 300px;
+    }
   }
 }

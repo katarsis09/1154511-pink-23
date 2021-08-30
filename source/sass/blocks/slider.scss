@@ -8,6 +8,11 @@
   width: 44px;
   justify-content: space-between;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 44px;
+    width: 56px;
+  }
+
   &__toggle {
     padding: 0;
     width: 6px;
@@ -28,5 +33,10 @@
     background-color: transparent;
     border-radius: 50%;
     cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      width: 12px;
+      height: 12px;
+    }
   }
 }

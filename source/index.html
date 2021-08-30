@@ -12,14 +12,19 @@
       <header class="page-header">
         <section class="page-header__top">
           <a class="page-header__logo">
-            <img class="page-header__logo-image" src="img/pink.svg" width="74" height="23" alt="Приложение «PINK»" />
+            <img class="page-header__logo-image" src="img/pink.svg" width="74" height="24" alt="Приложение «PINK»" />
           </a>
-          <nav class="page-header__main-nav main-nav">
+          <nav class="page-header__main-nav main-nav main-nav--nojs">
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--header">
+                  <a>
+                    <img class="page-header__logo-image" src="img/pink.svg" width="74" height="24" alt="Приложение «PINK»" />
+                  </a>
+                </li>
                 <li class="site-list__item site-list__item--active">
                   <a> Главная </a>
                 </li>
@@ -76,17 +81,22 @@
       <main class="page-main">
         <h1 class="visually-hidden">Приложение «PINK» — взгляните на жизнь иначе</h1>
         <section class="advantages slope">
-          <h2 class="advantages__title">
-            Устали от серости мегаполиса?<br /><br />
-            Нам есть, что вам<br />
-            предложить!
+          <h2 class="advantages__title container">
+            <span class="advantages__question">Устали от серости мегаполиса?</span>
+            <span class="advantages__offer">Нам есть, что вам <br />предложить!</span>
           </h2>
-          <div class="advantages__img img">
-            <img class="advantages__iphone" src="img/screen_1.png" width="186" height="382" alt="два мусорных бака, черно-белая фотография" />
-            <img class="advantages__pink" src="img/screen_2.png" width="186" height="382" alt="два мусорных бака в розовом фильтре" />
-            <img class="advantages__pink_smile" src="img/screen_3.png" width="186" height="382" alt="два мусорных бака, розовый фильтр и смайлик" />
-          </div>
-          <ul class="advantages__list opportunity">
+          <ul class="advantages__images images container">
+            <li class="advantages__shadow">
+              <img class="advantages__iphone" src="img/screen_1.png" width="186" height="382" alt="два мусорных бака, черно-белая фотография" />
+            </li>
+            <li class="advantages__shadow">
+              <img class="advantages__pink" src="img/screen_2.png" width="186" height="382" alt="два мусорных бака в розовом фильтре" />
+            </li>
+            <li class="advantages__shadow">
+              <img class="advantages__pink_smile" src="img/screen_3.png" width="186" height="382" alt="два мусорных бака, розовый фильтр и смайлик" />
+            </li>
+          </ul>
+          <ul class="advantages__list opportunity container">
             <li class="advantages__item advantages__item--mood opportunity__item">
               <h3 class="advantages__heading">Поднимает настроение</h3>
               <p class="advantages__intro">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -104,12 +114,17 @@
         <section class="research">
           <img class="research__img" src="img/timer.svg" width="238" height="276" alt="секундомер с цифрой 24" />
           <h2 class="research__title">Эффект на 24 часа!</h2>
-          <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <p class="research__description">
+            Британские ученые провели исследования и доказали, что положительный эффект <br />
+            от использования приложения длится <br />
+            целые сутки!
+          </p>
           <a class="research__link">Узнать больше об исследовании</a>
         </section>
         <section class="reviews">
           <div class="reviews__wrapper">
             <h2 class="visually-hidden">Отзывы о нас</h2>
+            <img class="reviews__image" src="img/quotes.svg" width="79" height="63" alt="кавычки" />
             <div class="reviews__list slider__list">
               <blockquote class="reviews__item slider__item">
                 <div class="reviews__author-info">
@@ -149,30 +164,57 @@
           </div>
         </section>
         <section class="price slope">
-          <table class="price__table">
-            <tr class="price__stroke">
-              <td class="price__cell"></td>
-              <td class="price__cell">База<br />1,99 USD</td>
-              <td class="price__cell">Стандарт<br />3,99 USD</td>
-              <td class="price__cell">Анлим<br />9,99 USD</td>
+          <table class="price__table table">
+            <tr class="table__stroke table__heading">
+              <td class="visually-hidden"></td>
+              <td class="table__cell table__tariff">
+                <span class="table__name">База</span>
+                <span class="table__price">1,99 USD</span>
+              </td>
+              <td class="table__cell table__tariff">
+                <span class="table__name">Стандарт</span>
+                <span class="table__price">3,99 USD</span>
+              </td>
+              <td class="table__cell table__tariff">
+                <span class="table__name">Анлим</span>
+                <span class="table__price">9,99 USD</span>
+              </td>
             </tr>
-            <tr class="price__stroke">
-              <td class="price__cell">Розовый фильтр</td>
-              <td class="price__cell">+</td>
-              <td class="price__cell">+</td>
-              <td class="price__cell">+</td>
+            <tr class="table__stroke">
+              <td class="table__cell table__option">Розовый фильтр</td>
+              <td class="table__cell">
+                <img class="table__yes table__icon" src="img/yes.svg" width="31" height="21" alt="зеленая галочка" />
+              </td>
+              <td class="table__cell">
+                <img class="table__yes table__icon" src="img/yes.svg" width="31" height="21" alt="зеленая галочка" />
+              </td>
+              <td class="table__cell">
+                <img class="table__yes table__icon" src="img/yes.svg" width="31" height="21" alt="зеленая галочка" />
+              </td>
             </tr>
-            <tr class="price__stroke">
-              <td class="price__cell">Смайлики</td>
-              <td class="price__cell">-</td>
-              <td class="price__cell">+</td>
-              <td class="price__cell">+</td>
+            <tr class="table__stroke">
+              <td class="table__cell table__option">Смайлики</td>
+              <td class="table__cell">
+                <img class="table__no table__icon" src="img/no.svg" width="27" height="27" alt="красный крестик" />
+              </td>
+              <td class="table__cell">
+                <img class="table__yes table__icon" src="img/yes.svg" width="31" height="21" alt="зеленая галочка" />
+              </td>
+              <td class="table__cell">
+                <img class="table__yes table__icon" src="img/yes.svg" width="31" height="21" alt="зеленая галочка" />
+              </td>
             </tr>
-            <tr class="price__stroke">
-              <td class="price__cell">Комментарии</td>
-              <td class="price__cell">-</td>
-              <td class="price__cell">-</td>
-              <td class="price__cell">+</td>
+            <tr class="table__stroke">
+              <td class="table__cell table__option">Комментарии</td>
+              <td class="table__cell">
+                <img class="table__no table__icon" src="img/no.svg" width="27" height="27" alt="красный крестик" />
+              </td>
+              <td class="table__cell">
+                <img class="table__no table__icon" src="img/no.svg" width="27" height="27" alt="красный крестик" />
+              </td>
+              <td class="table__cell">
+                <img class="table__yes table__icon" src="img/yes.svg" width="31" height="21" alt="зеленая галочка" />
+              </td>
             </tr>
           </table>
           <p class="price__toggles slider">
@@ -195,7 +237,7 @@
             <ul class="contacts__list">
               <li class="contacts__item">
                 <b class="contacts__text">Звоните:</b>
-                <a class="contacts__data contacts__phone" href="tel:+78125556666"> <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66 </a>
+                <a class="contacts__data contacts__phone" href="tel:+78125556666"> <span class="contacts__phone-mobile"></span> +7 (812) 555-66-66 </a>
               </li>
               <li class="contacts__item">
                 <b class="contacts__text">Пишите:</b>
@@ -203,7 +245,10 @@
               </li>
               <li class="contacts__item contacts__location">
                 <b class="contacts__text">Приезжайте в гости:</b>
-                <p class="contacts__data contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+                <p class="contacts__data contacts__address">
+                  ул. Большая <br />
+                  Конюшенная 19/8
+                </p>
               </li>
             </ul>
           </div>
@@ -244,5 +289,6 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript" src="./js/app.js"></script>
   </body>
 </html>

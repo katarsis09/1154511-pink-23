@@ -1,14 +1,15 @@
 .opportunity {
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 892px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    background: #f2f2f2;
+    position: relative;
+    z-index: 2;
   }
 
   &__item {
     @media (min-width: $desktop-width) {
-      width: 252px;
+      width: 300px;
       text-align: center;
     }
   }

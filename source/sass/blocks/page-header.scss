@@ -5,20 +5,44 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  &__logo-image {
+    display: block;
+  }
+
 
   &__top {
     background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 23px;
+    padding-right: 16px;
     padding-top: 21px;
     padding-bottom: 21px;
-    display: flex;
-    justify-content: space-around;
+
+    @media (min-width: $desktop-width) {
+      padding-left: 130px;
+      padding-right: 130px;
+      padding-top: 30px;
+      padding-bottom: 31px;
+    }
   }
 
   &__bottom {
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 100px 300px;
+      grid-template-rows: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 115px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 130px;
+      padding-bottom: 127px;
+      padding-top: 100px;
+      grid-template-rows: auto;
     }
   }
 

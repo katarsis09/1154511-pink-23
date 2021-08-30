@@ -11,17 +11,35 @@
 
   &__slogan {
     font-size: 24px;
-    line-height: 32px;
+    line-height: 30px;
     color: #ffffff;
     font-weight: 300;
     text-align: center;
-    padding-top: 29px;
-    padding-bottom: 34px;
+    padding-top: 22px;
+    padding-bottom: 28px;
     margin: 0 auto;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+  }
+
+  &__slogan--index {
+    @media (min-width: $tablet-width) {
+      padding-top: 93px;
+      font-size: 40px;
+      line-height: 48px;
+      width: 245px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 50px;
+      line-height: 68px;
+      padding: 0;
+      margin: 0;
+      width: 300px;
+      margin-bottom: 36px;
+    }
   }
 
 
