@@ -27,6 +27,7 @@
 
   &__item {
     margin-bottom: 69px;
+    position: relative;
 
     @media (min-width: $desktop-width) {
       width: 33%;
@@ -38,7 +39,7 @@
     line-height: 30px;
     font-weight: 400;
     color: #283645;
-    margin-left: 22px;
+    padding-left: 50px;
   }
 
   &__list {
@@ -50,5 +51,35 @@
       display: flex;
       flex-wrap: wrap;
     }
+  }
+
+  &__input + label::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: -7px;
+    width: 37px;
+    height: 37px;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+
+  &__input + label:hover::before {
+    border: 2px solid #283645;
+  }
+
+  &__input + label:active::before {
+    border: 2px solid #d22856;
+  }
+
+  &__input:checked + label::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 16px;
+    left: 0;
+    top: 6px;
+    background-image: url("../img/tick.svg");
   }
 }

@@ -148,6 +148,11 @@ img {
   border-style: none;
 }
 
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
 /* Forms
    ========================================================================== */
 
@@ -223,13 +228,6 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
-/**
- * Correct the padding in Firefox.
- */
-
-fieldset {
-  padding: 0.35em 0.75em 0.63em;
-}
 
 /**
  * 1. Correct the text wrapping in Edge and IE.

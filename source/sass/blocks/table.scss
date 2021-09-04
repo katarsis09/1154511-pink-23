@@ -4,6 +4,12 @@
     color: #ffffff;
     background-color: #ffffff;
 
+
+    @media (min-width: $mobile-width-only) {
+      min-width: 280px;
+      height: 59px;
+    }
+
     @media (min-width: $tablet-width) {
       height: 45px;
       width: 152px;
@@ -42,6 +48,10 @@
     color: #ffffff;
     background-color: #283645;
     text-align: center;
+
+    @media (min-width: $mobile-width-only) {
+      height: 94px;
+    }
   }
 
   &__price {
