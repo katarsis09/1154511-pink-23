@@ -47,12 +47,14 @@
     padding-bottom: 51px;
 
     @media (min-width: $tablet-width) {
-      width: 300px;
+      width: 620px;
       margin: 0 auto;
+      font-size: 50px;
+      line-height: 68px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 400px;
+      width: 747px;
     }
   }
 
