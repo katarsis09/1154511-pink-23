@@ -1,6 +1,21 @@
 .form {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 940px;
+  }
+
+
   &__title {
-    //
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    padding: 54px 20px 55px 20px;
+    text-align: center;
+
+    @media (min-width: $desktop-width) {
+      padding-left: 92px;
+      padding-right: 92px;
+    }
   }
 
   &__wrapper {
@@ -20,12 +35,28 @@
   }
 
   &__legend {
+    white-space: nowrap;
+    font-size: 14px;
     display: block;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    top: 42px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #d22856;
+
+    @media (min-width: $tablet-width) {
+      position: static;
+      transform: none;
+    }
   }
 
   &__fieldset {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 44px;
+    padding-top: 42px;
     border: none;
 
     @media (min-width: $tablet-width) {
@@ -34,6 +65,8 @@
 
     &--select {
       background-color: #f2f2f2;
+      position: relative;
+      padding-top: 115px;
 
       @media (min-width: $tablet-width) {
         background-color: #ffffff;
@@ -45,53 +78,56 @@
   &__field {
     display: flex;
     flex-direction: column;
+    margin-bottom: 29px;
 
     @media (min-width: $tablet-width) {
       &--row {
         flex-direction: row;
+        align-items: center;
       }
 
       &--column {
         flex-direction: column-reverse;
+        position: relative;
+      }
+
+      &--phone,
+      &--email {
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 59px;
+          width: 59px;
+        }
+      }
+
+      &--phone {
+        &::after {
+          background: url("../../img/phone_icon.png") no-repeat 50% 50% #e5e5e5;
+        }
+      }
+
+      &--email {
+        &::after {
+          background: url("../../img/mail_icon.svg") no-repeat 50% 50% #e5e5e5;
+        }
       }
     }
   }
 
-  &__field--column {
-    @media (min-width: $tablet-width) {
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 59px;
-        width: 59px;
-      }
-    }
-  }
-
-  &__field--column.form__field--phone {
-    @media (min-width: $tablet-width) {
-      &::after {
-        background: url("../../img/phone_icon.png") no-repeat 50% 50% #e5e5e5;
-      }
-    }
-  }
-
-  &__field--column.form__field--email {
-    @media (min-width: $tablet-width) {
-      &::after {
-        background: url("../../img/mail_icon.svg") no-repeat 50% 50% #e5e5e5;
-      }
-    }
-  }
 
   &__label {
     color: #d22856;
     font-size: 14px;
     text-transform: uppercase;
+    margin-bottom: 12px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
   }
 
   &__input {
@@ -103,9 +139,8 @@
     border: 2px solid #e5e5e5;
     border-radius: 1px;
     padding-left: 20px;
-    // padding-top: 23px;
-    // padding-bottom: 23px;
     height: 59px;
+    flex-grow: 1;
   }
 
   &__item {
@@ -131,7 +166,7 @@
     }
   }
 
-  .form__item input:checked ~ .form__choise {
+  &__item input:checked ~ &__choise {
     &::after {
       content: "";
     }
@@ -164,8 +199,38 @@
     }
   }
 
+  &__submit {
+    background-color: #2aab6d;
+    width: 100%;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 44px;
+  }
+
+  &__remark {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__star {
+    color: #d22856;
+  }
+
   &__fieldset--name {
-    @media (min-width: $mobile-width-only) {
+
+    border: none;
+    padding-bottom: 44px;
+
+    @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
       order: 1;
     }
 
@@ -178,7 +243,7 @@
   }
 
   &__fieldset--app {
-    @media (min-width: $mobile-width-only) {
+    @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
       order: 4;
     }
 
@@ -191,7 +256,11 @@
   }
 
   &__fieldset--achives {
-    @media (min-width: $mobile-width-only) {
+
+    padding-top: 115px;
+    padding-bottom: 44px;
+
+    @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
       order: 2;
     }
 
@@ -204,7 +273,7 @@
   }
 
   &__fieldset--contacts {
-    @media (min-width: $mobile-width-only) {
+    @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
       order: 3;
     }
 
@@ -217,7 +286,10 @@
   }
 
   &__fieldset--text {
-    @media (min-width: $mobile-width-only) {
+    position: relative;
+    padding-top: 74px;
+
+    @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
       order: 5;
     }
 
@@ -230,8 +302,10 @@
   }
 
   &__fieldset--submit {
-    @media (min-width: $mobile-width-only) {
-      order: 3;
+    padding-top: 0;
+
+    @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
+      order: 6;
     }
 
     @media (min-width: $tablet-width) {
@@ -239,6 +313,18 @@
       grid-column-end: 3;
       grid-row-start: 5;
       grid-row-end: 6;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    padding: 22px 20px;
+    border: 2px solid #e5e5e5;
+    min-height: 197px;
+
+    &::placeholder {
+      font-size: 18px;
+      color: rgba(40, 54, 69, 1);
     }
   }
 }
