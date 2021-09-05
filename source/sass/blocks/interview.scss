@@ -1,5 +1,6 @@
 .interview {
   &__title {
+
     padding-bottom: 40px;
     font-size: 14px;
     line-height: 18px;
@@ -8,7 +9,10 @@
     color: #d22856;
 
     @media (min-width: $tablet-width) {
-      padding-bottom: 0;
+      margin: 0 auto;
+      padding-left: 20px;
+      text-align: center;
+      padding-right: 20px;
     }
 
     @media (min-width: $desktop-width) {
@@ -16,7 +20,45 @@
     }
   }
 
+  &__label {
+    @media (min-width: $mobile-width-only) {
+      padding-left: 90px;
+    }
+  }
+
   &__item {
     margin-bottom: 62px;
+    position: relative;
+  }
+
+  &__input + label::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: -7px;
+    width: 37px;
+    height: 37px;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+
+  &__input + label:hover::before {
+    border: 2px solid #283645;
+  }
+
+  &__input + label:active::before {
+    border: 2px solid #d22856;
+  }
+
+  &__input:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 23px;
+    width: 15px;
+    height: 15px;
+    background-color: #d22856;
+    border-radius: 50%;
   }
 }

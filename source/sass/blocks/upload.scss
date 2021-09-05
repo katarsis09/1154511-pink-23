@@ -28,10 +28,15 @@
   }
 
   &__option {
+
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+
+    @media (min-width: $mobile-width-only) {
+      padding-top: 30px;
+    }
   }
 
   &__publish {
@@ -64,11 +69,129 @@
   }
 
   &__list {
+    @media (min-width: $mobile-width-only) {
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      padding-bottom: 50px;
+      padding-top: 43px;
+    }
+
     @media (min-width: $tablet-width) {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 1;
       grid-row-end: 2;
+
+      display: flex;
+      flex-direction: column;
+
+      height: 180px;
     }
+  }
+
+  &__label {
+    font-size: 0;
+    width: 44px;
+    height: 44px;
+    display: block;
+
+    svg path {
+      fill: #283645;
+      opacity: 0.3;
+
+      @media (min-width: $tablet-width) {
+        fill: #d22856;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__radio:checked {
+    & ~ .upload__range {
+      @media (min-width: $mobile-width-only) {
+        display: block;
+      }
+    }
+
+    & ~ .upload__label svg path {
+      @media (min-width: $mobile-width-only) {
+        fill: #d22856;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__range {
+    @media (min-width: $mobile-width-only) {
+      display: none;
+      position: absolute;
+      top: 122px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+    }
+  }
+
+  &__item {
+    @media (min-width: $tablet-width) {
+      position: relative;
+    }
+  }
+
+  &__scale {
+    position: relative;
+    height: 2px;
+    background: #283645;
+    width: 240px;
+
+    @media (min-width: $mobile-width-only) {
+      width: 240px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 202px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 288px;
+    }
+  }
+
+  &__toggle {
+    position: absolute;
+    top: -6px;
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    border: 2px solid #d22856;
+    background-color: #ffffff;
+    border-radius: 50%;
+
+    &--crop {
+
+      left: 83%;
+    }
+
+    &--fill {
+
+      left: 19%;
+    }
+
+    &--contrast {
+
+      left: 50%;
+    }
+  }
+
+  &__toggle:active {
+    background-color: #d22856;
   }
 }
