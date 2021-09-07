@@ -1,6 +1,7 @@
 .reviews {
   text-align: center;
 
+
   @media (min-width: $desktop-width) {
     margin-top: 150px;
   }
@@ -83,10 +84,6 @@
   }
 
   &__image {
-    @media (max-width: $mobile-width-only) {
-      display: none;
-    }
-
     @media (min-width: $tablet-width) {
       display: none;
     }

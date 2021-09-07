@@ -1,12 +1,55 @@
 @import "../mixins/var.scss";
 
 .page-header {
-  background-image: url("../img/back_mobile.jpg");
+
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: 50% 0%;
+
+  @media (min-width: 500px) and (max-width: $tablet-width) {
+    background-size: cover;
+  }
+
+  @media (min-width: 700px) {
+    background-size: cover;
+  }
+
+  @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
+    background-image: url("../img/back_mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back_mobile@2x.jpg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/back_tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back_tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/back_desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back_desktop@2x.jpg");
+    }
+  }
+
 
   &__logo-image {
     display: block;
+
+    @media (min-width: $tablet-width) {
+      width: 145px;
+      height: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 147px;
+    }
   }
 
 
@@ -29,13 +72,29 @@
   }
 
   &__bottom {
+    background-image: url("../img/phone.png");
+    background-repeat: no-repeat;
+    background-position: 50% 110px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone@2x.png");
+      background-size: 320px auto;
+    }
+
+
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 115px;
+
+      background-image: url("../img/phone_tablet.png");
+      background-position: 84% 80px;
+      padding-bottom: 123px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/phone_tablet@2x.png");
+        background-size: 660px auto;
+      }
     }
 
     @media (min-width: $desktop-width) {
@@ -43,6 +102,13 @@
       padding-bottom: 127px;
       padding-top: 100px;
       grid-template-rows: auto;
+      background-image: url("../img/phone_desktop.png");
+      background-position: 84% 80px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/phone_desktop@2x.png");
+        background-size: 1200px auto;
+      }
     }
   }
 
