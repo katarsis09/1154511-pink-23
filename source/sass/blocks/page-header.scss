@@ -3,7 +3,7 @@
 .page-header {
 
   background-repeat: no-repeat;
-  background-size: contain;
+  //background-size: contain;
   background-position: 50% 0%;
 
   @media (min-width: 500px) and (max-width: $tablet-width) {
@@ -71,7 +71,8 @@
     }
   }
 
-  &__bottom {
+
+  &--index &__bottom {
     background-image: url("../img/phone.png");
     background-repeat: no-repeat;
     background-position: 50% 110px;
