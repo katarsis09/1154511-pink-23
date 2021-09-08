@@ -6,13 +6,21 @@
     <title>Приложение «PINK»</title>
     <!-- prettier-ignore -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="favicon/180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="page">
     <div class="page-wrapper">
-      <header class="page-header">
+      <header class="page-header page-header--index">
         <section class="page-header__top">
           <a class="page-header__logo">
-            <img class="page-header__logo-image" src="img/pink.svg" width="74" height="24" alt="Приложение «PINK»" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype_desktop.svg" />
+              <source media="(min-width: 660px)" srcset="img/logotype_tablet.svg" />
+              <img class="page-header__logo-image" src="img/pink.svg" width="74" height="24" alt="Приложение «PINK»" />
+            </picture>
           </a>
           <nav class="page-header__main-nav main-nav main-nav--nojs">
             <button class="main-nav__toggle" type="button">
@@ -49,7 +57,7 @@
               иначе!
             </h2>
           </div>
-          <img class="page__iphone" src="img/phone.png" width="320" height="286" alt="в руке телефон с розовым экраном" />
+          <!--<img class="page__iphone" src="img/phone.png" width="320" height="286" alt="в руке телефон с розовым экраном" />-->
           <div class="page__info info">
             <a class="info__button" href="market.html">Скачать приложение</a>
             <div class="info__systems systems">
@@ -86,14 +94,14 @@
             <span class="advantages__offer">Нам есть, что вам <br />предложить!</span>
           </h2>
           <ul class="advantages__images images container">
-            <li class="advantages__shadow">
-              <img class="advantages__iphone" src="img/screen_1.png" width="186" height="382" alt="два мусорных бака, черно-белая фотография" />
+            <li class="advantages__shadow advantages__shadow--first">
+              <!--<img class="advantages__iphone" src="img/screen_1.png" width="186" height="382" alt="два мусорных бака, черно-белая фотография" />-->
             </li>
-            <li class="advantages__shadow">
-              <img class="advantages__pink" src="img/screen_2.png" width="186" height="382" alt="два мусорных бака в розовом фильтре" />
+            <li class="advantages__shadow advantages__shadow--second">
+              <!--<img class="advantages__pink" src="img/screen_2.png" width="186" height="382" alt="два мусорных бака в розовом фильтре" />-->
             </li>
-            <li class="advantages__shadow">
-              <img class="advantages__pink_smile" src="img/screen_3.png" width="186" height="382" alt="два мусорных бака, розовый фильтр и смайлик" />
+            <li class="advantages__shadow advantages__shadow--third">
+              <!--<img class="advantages__pink_smile" src="img/screen_3.png" width="186" height="382" alt="два мусорных бака, розовый фильтр и смайлик" />-->
             </li>
           </ul>
           <ul class="advantages__list opportunity container">
@@ -253,7 +261,7 @@
             </ul>
           </div>
           <div class="map">
-            <img class="map__image" src="img/map.png" width="320" height="200" alt="г. Санкт-Петербург, ул. Большая Конюшенная 19/8" />
+            <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124086!2d30.320894616252744!3d59.93879686904775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1630948001093!5m2!1sru!2sru" width="100%" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
           </div>
           <div class="footer__social social">
             <div class="footer__logotype">

@@ -2,6 +2,10 @@
   padding-top: 164px;
   padding-bottom: 94px;
 
+  @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
+    overflow-x: auto;
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 113px;
   }
