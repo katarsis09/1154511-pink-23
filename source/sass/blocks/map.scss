@@ -1,4 +1,25 @@
 .map {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 33px;
+    background-image: url("../img/triangle_white_footer.svg");
+    background-size: 100% 33px;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      height: 67px;
+      background-size: 100% 73px;
+    }
+  }
+
   &__iframe {
     @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
       height: 200px;

@@ -14,7 +14,8 @@
     @media (min-width: $tablet-width) {
       flex-direction: row;
       justify-content: space-between;
-      width: 620px;
+      align-items: stretch;
+      width: 644px;
       padding: 36px 10px 40px 10px;
     }
 
@@ -28,16 +29,23 @@
     width: 130px;
     justify-content: space-between;
     align-items: center;
+
+    @media (min-width: $tablet-width) {
+      justify-content: flex-end;
+      width: 155px;
+    }
   }
 
   &__logotype {
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    gap: 13px;
     justify-content: space-between;
     width: 145px;
-    margin-bottom: 41px;
+    margin-bottom: 39px;
 
     @media (min-width: $tablet-width) {
+
       margin-bottom: 0;
     }
   }

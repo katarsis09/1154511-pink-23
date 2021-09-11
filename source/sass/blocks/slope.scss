@@ -1,6 +1,25 @@
 .slope {
   background-image: url("../img/grey-bg.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 0%;
+  background-size: contain;
+  background-position: 50% 81%;
+
+  @media (min-width: $tablet-width) {
+    background-size: cover;
+    background-position: 50% -16%;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-position: 50% -7%;
+  }
+
+
+  &.price {
+    background-position: 50% 14%;
+    background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      background-position: 50% 3%;
+    }
+  }
 }

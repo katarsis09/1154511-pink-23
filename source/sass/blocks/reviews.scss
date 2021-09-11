@@ -9,18 +9,24 @@
   &__wrapper {
     padding-left: 20px;
     padding-right: 20px;
+
+    @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
+      transform: translateY(-42px);
+      background: #ffffff;
+      padding-top: 42px;
+    }
   }
 
   &__item {
     @media (min-width: $tablet-width) {
-      margin-top: 67px;
+      //margin-top: 67px;
+      padding-top: 14px;
     }
 
     @media (min-width: $desktop-width) {
       margin-top: 46px;
     }
   }
-
 
   &__author-name {
 
@@ -31,6 +37,8 @@
 
     @media (min-width: $tablet-width) {
       order: 2;
+      font-size: 20px;
+      line-height: 30px;
     }
 
     @media (min-width: $desktop-width) {
@@ -63,6 +71,10 @@
     padding-top: 31px;
     padding-bottom: 44px;
 
+    @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
+      padding-top: 16px;
+    }
+
     @media (min-width: $tablet-width) {
       font-size: 18px;
       order: 1;
@@ -84,6 +96,10 @@
   }
 
   &__image {
+    @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
+      display: none;
+    }
+
     @media (min-width: $tablet-width) {
       display: none;
     }

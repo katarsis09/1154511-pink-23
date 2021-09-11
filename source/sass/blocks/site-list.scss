@@ -29,6 +29,10 @@
     }
   }
 
+  &__item--active:not([href]) {
+    border-bottom: 2px solid #ffffff;
+  }
+
 
   &__link {
     @media (min-width: $desktop-width) {
@@ -36,8 +40,13 @@
     }
   }
 
-  &__item a {
+  &__item {
+    @media (min-width: $desktop-width) {
+      margin-left: 10px;
+    }
+  }
 
+  &__item a {
     font-size: 18px;
     line-height: 32px;
     font-weight: 700;
@@ -51,6 +60,7 @@
       line-height: 18px;
       font-weight: 400;
       box-shadow: none;
+      padding-bottom: 11px;
     }
   }
 
