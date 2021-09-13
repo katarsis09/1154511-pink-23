@@ -1,7 +1,7 @@
 .slope {
   background-image: url("../img/grey-bg.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   background-position: 50% 81%;
 
   @media (min-width: $tablet-width) {
@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-position: 50% -7%;
+    background-position: 50% -16%;
   }
 
 

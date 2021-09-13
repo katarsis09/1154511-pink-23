@@ -14,11 +14,16 @@
     margin: 0 auto;
 
     @media (min-width: $tablet-width) {
-      width: 436px;
+      font-size: 18px;
+      width: 470px;
+      padding-top: 89px;
+      padding-bottom: 77px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 538px;
+      width: 590px;
+      padding-top: 91px;
+      padding-bottom: 89px;
     }
   }
 
@@ -27,15 +32,58 @@
     line-height: 24px;
     font-weight: 700;
     text-align: start;
-    padding-top: 25px;
-    padding-bottom: 14px;
+    padding-top: 18px;
+    padding-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 14px;
+      padding-top: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 10px;
+    }
   }
+
+  &__beige {
+    content: attr(data-panorama-text);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 20px;
+    padding: 6px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    background-color: #d22856;
+    color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+      right: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 54px;
+      right: 130px;
+    }
+  }
+
 
   &__time {
     font-size: 12px;
     line-height: 24px;
     font-weight: 300;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      margin-left: -2px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
+    }
   }
 
   &__description {
@@ -43,17 +91,24 @@
     line-height: 24px;
     font-weight: 400;
     width: 100%;
-    padding-bottom: 25px;
+    padding-bottom: 12px;
     left: 0;
 
     @media (min-width: $tablet-width) {
       width: 100%;
       padding-bottom: 0;
+      padding-left: 12px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 10px;
+      width: 245px;
+      //padding-bottom: 13px;
     }
   }
 
   &__rating {
-    padding-bottom: 26px;
+    padding-bottom: 15px;
 
 
     @media (min-width: $tablet-width) {
@@ -64,6 +119,13 @@
       align-items: center;
       padding-bottom: 0;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 10px;
+      padding-right: 17px;
+      position: absolute;
+      top: 109px;
+    }
   }
 
   &__img {
@@ -72,11 +134,39 @@
     display: block;
     max-width: 100%;
     height: auto;
+
+    @media (min-width: $desktop-width) {
+
+      margin-right: 15px;
+    }
+  }
+
+  &__editor {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0 auto;
+    padding-bottom: 43px;
+    text-align: center;
+    padding-top: 20px;
+    width: 280px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      padding-top: 41px;
+      width: 450px;
+      padding-bottom: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 6px;
+      padding-bottom: 64px;
+    }
   }
 
 
   &__item {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 
     @media (min-width: $tablet-width) {
       width: calc(50% - 10px);
@@ -84,13 +174,14 @@
 
     @media (min-width: $desktop-width) {
       width: calc(33% - 10px);
+      margin-bottom: 54px;
     }
   }
 
-  &__item:not(:first-child) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+  //&__item:not(:first-child) {
+  //  padding-left: 20px;
+  // padding-right: 20px;
+  //}
 
   &__wrapper {
     background-color: #f2f2f2;
@@ -99,6 +190,10 @@
     @media (min-width: $tablet-width) {
       height: 155px;
     }
+
+    @media (min-width: $desktop-width) {
+      position: relative;
+    }
   }
 
   &__list {
@@ -106,14 +201,37 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      position: relative;
+
+      &:not(:first-child) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+
+      padding-top: 650px;
+
+      &:not(:first-child) {
+        padding-left: 130px;
+        padding-right: 130px;
+      }
     }
   }
 
   &__panorama {
     display: block;
+
     width: 100%;
     object-fit: cover;
     padding-left: 0;
     padding-right: 0;
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
   }
 }

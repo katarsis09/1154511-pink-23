@@ -32,7 +32,7 @@
                   <a class="site-list__link" href="index.html"> Главная </a>
                 </li>
                 <li class="site-list__item">
-                  <a>Фотографии</a>
+                  <a class="site-list__link" href="catalog.html">Фотографии</a>
                 </li>
                 <li class="site-list__item site-list__item--active">
                   <a class="site-list__link"> Конкурс </a>
@@ -156,15 +156,19 @@
 
         <fieldset class="form__fieldset form__fieldset--submit">
           <button class="form__submit" type="submit">Отправить форму</button>
-          <small class="form__remark"><span class="form__star">*</span> — обязательные поля</small>
+          <small class="form__remark"><span class="form__star">*</span> — обязательные<span class="form__note">&thinsp;для заполнения</span>&thinsp;поля</small>
         </fieldset>
       </form>
     </main>
     <footer class="footer">
       <div class="footer__social social">
         <div class="footer__logotype">
-          <img class="footer__logo" src="img/glasses_footer.svg" width="59" height="40" alt="логотип" />
-          <img class="footer__pink" src="img/pink_footer.svg" width="74" height="23" alt="логотип" />
+          <a class="footer__pink" href="index.html" aria-label="логотип Pink">
+            <picture>
+              <source class="footer__logo--desktop" media="(min-width: 1200px)" srcset="img/logotype_blue_desktop.svg" />
+              <img class="footer__logo" src="img/logotype_blue_tablet.svg" width="59" height="40" alt="логотип" />
+            </picture>
+          </a>
         </div>
         <b class="social__title visually-hidden">Давайте дружить!</b>
         <ul class="social__list social__list--form">

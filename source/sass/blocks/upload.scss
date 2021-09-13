@@ -5,6 +5,17 @@
   padding-bottom: 41px;
   padding-top: 20px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+    padding-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 130px;
+    margin-right: 130px;
+    padding-bottom: 34px;
+  }
+
   &__button {
     color: #d22856;
     font-size: 18px;
@@ -13,9 +24,9 @@
 
     border-radius: 32px;
     text-decoration: none;
-    padding-top: 21px;
-    padding-bottom: 21px;
-    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 260px;
   }
 
   &__img {
@@ -30,6 +41,10 @@
       width: 300px;
       height: 400px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 57px;
+    }
   }
 
   &__option {
@@ -40,16 +55,33 @@
     grid-row-end: 3;
 
     @media (min-width: $mobile-width-only) {
-      padding-top: 30px;
+      padding-top: 63px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 4px;
+      padding-left: 37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 85px;
     }
   }
 
   &__publish {
     border: 3px solid #d22856;
+    margin-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      width: 260px;
+      margin-bottom: 23px;
+    }
 
     @media (min-width: $desktop-width) {
       display: inline-block;
       width: 183px;
+      margin-left: -38px;
+      margin-right: 39px;
     }
   }
 
@@ -69,17 +101,17 @@
 
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: auto;
     }
   }
 
   &__list {
     @media (min-width: $mobile-width-only) {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
       position: relative;
       padding-bottom: 50px;
-      padding-top: 43px;
+      padding-top: 40px;
     }
 
     @media (min-width: $tablet-width) {
@@ -91,15 +123,28 @@
       display: flex;
       flex-direction: column;
 
-      height: 180px;
+      height: 260px;
+      padding-top: 0;
+      padding-left: 37px;
+
+      @media (min-width: $desktop-width) {
+        margin-right: 13px;
+        justify-content: flex-start;
+      }
     }
   }
 
   &__label {
     font-size: 0;
     width: 44px;
-    height: 44px;
+    //height: 44px;
     display: block;
+
+    @media (min-width: $desktop-width) {
+      margin-left: -36px;
+      // margin-top: -26px;
+    }
+
 
     svg path {
       fill: #283645;
@@ -149,6 +194,11 @@
     @media (min-width: $tablet-width) {
       position: relative;
     }
+
+    @media (min-width: $desktop-width) {
+      height: 44px;
+      margin-bottom: 28px;
+    }
   }
 
   &__scale {
@@ -182,19 +232,61 @@
 
     &--crop {
 
-      left: 83%;
+      left: 81%;
     }
 
     &--fill {
 
-      left: 19%;
+      left: 12%;
     }
 
     &--contrast {
 
-      left: 50%;
+      left: 47%;
     }
   }
+
+  &__svg {
+    &--crop {
+      @media (min-width: $tablet-width) {
+        width: 22px;
+        height: 22px;
+      }
+
+
+      @media (min-width: $desktop-width) {
+        width: 44px;
+        height: 44px;
+      }
+    }
+
+
+    &--fill {
+      @media (min-width: $tablet-width) {
+
+        width: 24px;
+        height: 22px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 48px;
+        height: 43px;
+      }
+    }
+
+    &--contrast {
+      @media (min-width: $tablet-width) {
+        width: 16px;
+        height: 16px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
 
   &__toggle:active {
     background-color: #d22856;

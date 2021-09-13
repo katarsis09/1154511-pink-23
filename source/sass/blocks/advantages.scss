@@ -52,7 +52,7 @@
 
 
   &__shadow {
-    width: 186px;
+    width: 300px;
     height: 382px;
 
 
@@ -65,7 +65,7 @@
 
         display: block;
 
-        background-image: url("../img/phone-shadow.png");
+        background-image: url("../img/screen_1_desktop.png");
 
         background-repeat: no-repeat;
 
@@ -75,7 +75,7 @@
         background-size: 300px auto;
 
         @media (min-resolution: 2dppx) {
-          // background-image: url("../img/screen_1@2x.png");
+          background-image: url("../img/screen_1_desktop@2x.png");
           // background-size: 186px 382px;
         }
       }
@@ -89,43 +89,45 @@
       @media (min-width: $desktop-width) {
 
         display: block;
-        background-image: url("../img/screen_2.png");
+        background-image: url("../img/screen_2_desktop.png");
 
         @media (min-resolution: 2dppx) {
-          background-image: url("../img/screen_2@2x.png");
-          background-size: 186px 382px;
+          background-image: url("../img/screen_2_desktop@2x.png");
+          background-size: 300px auto;
+          background-repeat: no-repeat;
         }
       }
     }
 
     &--third {
       background-size: contain;
-      background-image: url("../img/screen_3.png");
       margin: 0 auto;
+      background-image: url("../img/screen_3.png");
+
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/screen_3@2x.png");
+        background-size: 300px auto;
+      }
+
+      @media (min-width: $mobile-width-only) and (max-width: $desktop-width) {
+        width: 157px;
+        height: 320px;
+        background-size: 157px 320px;
+      }
+
+      @media (min-width: $tablet-width) {
+        width: 268px;
+        height: 547px;
+        background-size: 268px 547px;
+        margin: 0;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 186px;
+        height: 382px;
         background-size: 186px 382px;
-
-        @media (min-width: $mobile-width-only) and (max-width: $desktop-width) {
-          width: 157px;
-          height: 320px;
-          background-size: 157px 320px;
-        }
-
-        @media (min-width: $tablet-width) {
-          width: 268px;
-          height: 547px;
-          background-size: 268px 547px;
-          margin: 0;
-        }
-
-        @media (min-width: $desktop-width) {
-          width: 186px;
-          height: 382px;
-          background-size: 186px 382px;
-          margin: 0;
-        }
+        margin: 0;
       }
     }
   }
@@ -210,7 +212,7 @@
       grid-column-end: 4;
       grid-row-start: 3;
       grid-row-end: 4;
-      transform: translateY(-118px);
+      //transform: translateY(-118px);
     }
   }
 
@@ -279,11 +281,6 @@
 
     @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
       margin-bottom: 30px;
-    }
-
-    @media (min-width: $tablet-width) {
-      width: 588px;
-      padding-top: 10px;
     }
 
     @media (min-width: $desktop-width) {

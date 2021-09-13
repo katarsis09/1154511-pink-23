@@ -442,6 +442,18 @@
       display: block;
       width: 94%;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 47%;
+    }
+  }
+
+  &__note {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
   }
 
   &__remark {
@@ -534,6 +546,10 @@
       padding: 37px 60px 46px 60px;
       margin-bottom: 66px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 38px;
+    }
   }
 
   &__fieldset--submit {
@@ -568,6 +584,11 @@
 
     @media (min-width: $tablet-width) {
       min-height: 192px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 118px;
+      padding-bottom: 52px;
     }
 
     &::placeholder {

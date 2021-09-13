@@ -86,19 +86,20 @@
   }
 
   &__slogan--catalog {
-    padding-bottom: 84px;
-    padding-top: 36px;
+    padding-bottom: 79px;
+    padding-top: 30px;
+    line-height: 31px;
 
     @media (min-width: $tablet-width) {
       font-size: 50px;
       line-height: 68px;
 
-      padding-top: 81px;
-      padding-bottom: 143px;
+      padding-top: 68px;
+      padding-bottom: 128px;
 
       @media (min-width: $desktop-width) {
-        padding-top: 74px;
-        padding-bottom: 104px;
+        padding-top: 62px;
+        padding-bottom: 89px;
       }
     }
   }

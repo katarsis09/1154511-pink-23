@@ -1,19 +1,33 @@
 .table {
+  table-layout: fixed;
+  margin: 0 auto;
+
+  &__stroke {
+    display: flex;
+  }
+
   &__cell {
     border: 1px solid #f5f5f5;
     color: #ffffff;
     background-color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 17px;
+    padding-right: 20px;
 
 
     @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
       min-width: 280px;
       height: 59px;
-      margin-bottom: 58px;
     }
 
     @media (min-width: $tablet-width) {
       height: 45px;
       width: 152px;
+      display: block;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -22,11 +36,21 @@
     }
   }
 
-  &__heading {
+  &__cell-title {
+    color: #283645;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+
     @media (min-width: $tablet-width) {
-      height: 78px;
-      width: 152px;
+      display: none;
     }
+  }
+
+  &__heading &__cell {
+    height: auto;
   }
 
   &__option {
@@ -49,10 +73,25 @@
     color: #ffffff;
     background-color: #283645;
     text-align: center;
+    display: block;
+    padding-top: 11px;
+    position: relative;
+    overflow: hidden;
 
     @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
       font-size: 16px;
       height: 99px;
+    }
+
+    &--badge::after {
+      content: "ХИТ";
+      position: absolute;
+      width: 104px;
+      height: 23px;
+      background-color: #d22856;
+      top: 11px;
+      left: -33px;
+      transform: rotate(-45deg);
     }
   }
 
@@ -77,7 +116,6 @@
     display: block;
     font-weight: 700;
     line-height: 30px;
-    margin-bottom: 15px;
     text-transform: uppercase;
 
     @media (min-width: $tablet-width) {
@@ -95,8 +133,12 @@
   }
 
   &__icon {
+    display: inline-block;
+    vertical-align: middle;
 
-    display: block;
-    margin: 0 auto;
+    @media (min-width: $tablet-width) {
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
