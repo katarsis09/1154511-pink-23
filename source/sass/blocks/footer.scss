@@ -57,6 +57,9 @@
   }
 
   &__logo {
+    width: 145px;
+    height: 40px;
+
     @media (min-width: $desktop-width) {
       width: 147px;
       height: 40px;
