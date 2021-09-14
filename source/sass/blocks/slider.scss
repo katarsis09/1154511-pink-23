@@ -1,15 +1,11 @@
 .slider {
 
-  position: absolute;
-  left: 50%;
-  transform: translate(-56%, -107%);
-  z-index: 20;
   display: flex;
-
-  justify-content: center;
   align-items: center;
   height: 12px;
-  gap: 17px;
+  width: 60px;
+  margin: 0 auto;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     margin-top: 44px;
@@ -44,8 +40,10 @@
   }
 
   &.price__toggles {
-    transform: translate(-43%, -107%);
-
+    position: absolute;
+    left: 51%;
+    bottom: 45px;
+    transform: translateX(-50%);
     @media (min-width: $tablet-width) {
       display: none;
     }

@@ -49,9 +49,6 @@
     }
   }
 
-  &__heading &__cell {
-    height: auto;
-  }
 
   &__option {
     color: #283645;
@@ -77,11 +74,8 @@
     padding-top: 11px;
     position: relative;
     overflow: hidden;
-
-    @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
-      font-size: 16px;
-      height: 99px;
-    }
+    font-size: 16px;
+    height: 99px;
 
     &--badge::after {
       content: "ХИТ";
@@ -89,15 +83,15 @@
       width: 104px;
       height: 23px;
       background-color: #d22856;
-      top: 11px;
-      left: -33px;
+      top: 17px;
+      left: -26px;
       transform: rotate(-45deg);
     }
   }
 
   &__price {
     display: block;
-    line-height: 30px;
+    line-height: 26px;
     font-weight: 300;
 
     @media (min-width: $tablet-width) {

@@ -1,7 +1,11 @@
 .price {
   padding-top: 164px;
-  padding-bottom: 45px;
-  overflow-x: scroll;
+  padding-bottom: 102px;
+  position: relative;
+
+  &__wrapper {
+    overflow-x: scroll;
+  }
 
   @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
     overflow-x: auto;
