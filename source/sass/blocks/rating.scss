@@ -11,6 +11,10 @@
   &__icon {
     margin-right: 15px;
 
+    @media (min-width: $tablet-width) {
+      margin-right: 30px;
+    }
+
     @media (min-width: $desktop-width) {
       position: absolute;
       left: 240px;
@@ -21,5 +25,6 @@
     @media (min-width: $desktop-width) {
       position: relative;
     }
+
   }
 }
