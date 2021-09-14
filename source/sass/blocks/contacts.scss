@@ -19,6 +19,7 @@
     @media (min-width: $desktop-width) {
       font-size: 50px;
       line-height: 61px;
+      padding-top: 67px;
     }
   }
 
@@ -40,6 +41,10 @@
     @media (min-width: $tablet-width) {
       padding-top: 4px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 21px;
+    }
   }
 
   &__list {
@@ -60,6 +65,8 @@
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 98px;
       justify-content: space-around;
+      width: 100%;
+      padding: 12px 122px 56px 119px;
     }
   }
 
