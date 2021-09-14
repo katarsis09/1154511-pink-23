@@ -19,7 +19,7 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
 }
 
@@ -81,11 +81,18 @@ const server = (done) => {
 
 exports.server = server;
 
+// Reload
+const reload = done => {
+  sync.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/sass/**/*.scss", gulp.series("styles", reload));
+  gulp.watch("source/*.html", gulp.series(html, reload));
+  gulp.watch("source/js/*.js", gulp.series(scripts))
 }
 
 // Delete build before
@@ -95,7 +102,7 @@ const clean = () => {
 exports.clean = clean;
 
 
-
+// Build
 
 const build = gulp.series(
   clean,
@@ -106,7 +113,6 @@ const build = gulp.series(
     copy
   )
 );
-
 exports.build = build;
 
 exports.default = gulp.series(

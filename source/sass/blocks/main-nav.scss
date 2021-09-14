@@ -118,3 +118,27 @@
     }
   }
 }
+
+.main-nav--nojs {
+
+  @media (min-width: $mobile-width-only) and (max-width: $desktop-width)  {
+    width: 100%;
+    .main-nav__wrapper {
+      position: static;
+    }
+
+    .main-nav__list {
+      display: block;
+      margin-left: 10px;
+    }
+
+    .main-nav__toggle {
+      display: none;
+    }
+
+    .site-list__item--header {
+      display: none;
+    }
+  }
+
+}
