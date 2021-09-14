@@ -117,6 +117,10 @@
 
     &--text {
       width: 218px;
+
+      @media (min-width: $tablet-width) {
+        width: 235px;
+      }
     }
 
     &--select {
@@ -163,7 +167,7 @@
     &--select {
       background-color: #f2f2f2;
       position: relative;
-      padding-top: 111px;
+      padding-top: 107px;
       padding-bottom: 39px;
 
       @media (min-width: $tablet-width) {
@@ -372,6 +376,9 @@
       &:not(:last-child) {
         margin-bottom: 35px;
       }
+      &:last-child {
+        margin-bottom: 0px;
+      }
     }
   }
 
@@ -516,7 +523,7 @@
   &__fieldset--achives {
 
     padding-top: 115px;
-    padding-bottom: 44px;
+    padding-bottom: 0px;
 
     @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
       order: 2;
@@ -530,7 +537,7 @@
       padding-top: 42px;
       margin-bottom: 58px;
       padding-left: 59px;
-      padding-bottom: 46px;
+      padding-bottom: 1px;
     }
 
     @media (min-width: $desktop-width) {
@@ -565,6 +572,7 @@
 
     @media (min-width: $desktop-width) {
       padding-bottom: 38px;
+      padding-top: 29px;
     }
   }
 
