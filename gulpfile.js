@@ -53,7 +53,8 @@ exports.scripts = scripts;
 const copy = (done) => {
   return gulp.src([
     "source/fonts/*.{woff,woff2}",
-    "source/favicon/*.ico",
+    "source/favicon/*.{svg,png}",
+    "source/favicon.ico",
     "source/img/**/*.{jpg,png,svg,webp}"
   ], {
     base: "source"
