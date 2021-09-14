@@ -1,4 +1,6 @@
 .panorama {
+
+
   &__rating {
     @media (min-width: $tablet-width) {
       grid-column-start: 2;
@@ -63,6 +65,7 @@
       padding-left: 15px;
       padding-right: 17px;
       height: 96px;
+      margin-bottom: 48px;
     }
   }
 
@@ -87,6 +90,10 @@
     @media (min-width: $tablet-width) {
       margin-left: 16px;
       margin-bottom: 6px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
     }
   }
 }
