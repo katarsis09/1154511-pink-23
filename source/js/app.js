@@ -8,4 +8,25 @@ burgerBtn.addEventListener('click', () => {
 })
 
 const overflowTableWrapper = document.querySelector('.price__wrapper')
-overflowTableWrapper.scrollLeft = 535
+if (overflowTableWrapper) {
+  overflowTableWrapper.scrollLeft = 535
+}
+
+const form = document.querySelector('.form__wrapper')
+
+const modalSuccess = document.querySelector('.modal--success')
+const modalReject = document.querySelector('.modal--reject')
+
+if (form) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    modalReject.style.display = 'flex'
+    const btn = modalReject.querySelector('button')
+    btn.addEventListener('click', () => {
+      modalReject.style.display = 'none'
+    })
+  })
+}
+
+
+
