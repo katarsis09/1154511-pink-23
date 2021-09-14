@@ -1,6 +1,4 @@
 .panorama {
-
-
   &__rating {
     @media (min-width: $tablet-width) {
       grid-column-start: 2;
@@ -87,6 +85,7 @@
 
   &__icon {
     margin-right: 15px;
+
     @media (min-width: $tablet-width) {
       margin-left: 16px;
       margin-bottom: 6px;

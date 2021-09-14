@@ -60,7 +60,6 @@ const copy = (done) => {
     base: "source"
   })
     .pipe(gulp.dest("build"));
-  done();
 }
 
 exports.copy = copy;
@@ -129,4 +128,3 @@ exports.default = gulp.series(
     styles
   )
 );
-

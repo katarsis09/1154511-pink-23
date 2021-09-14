@@ -42,10 +42,6 @@
   }
 
   &__toggle {
-    @media (min-width: $tablet-width) {
-
-    }
-
     @media (min-width: $desktop-width) {
       display: none;
     }
@@ -132,7 +128,8 @@
     @media (min-width: $tablet-width) {
       margin-right: 0;
 
-      &::before, &:after {
+      &::before,
+      &::after {
         top: 18px;
       }
     }
@@ -140,9 +137,9 @@
 }
 
 .main-nav--nojs {
-
-  @media (min-width: $mobile-width-only) and (max-width: $desktop-width)  {
+  @media (min-width: $mobile-width-only) and (max-width: $desktop-width) {
     width: 100%;
+
     .main-nav__wrapper {
       position: static;
     }
@@ -160,5 +157,4 @@
       display: none;
     }
   }
-
 }

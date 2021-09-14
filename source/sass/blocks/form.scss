@@ -371,14 +371,16 @@
         margin-bottom: 42px;
       }
     }
+  }
 
-    &--app {
-      &:not(:last-child) {
-        margin-bottom: 35px;
-      }
-      &:last-child {
-        margin-bottom: 0px;
-      }
+
+  &__item--app {
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
@@ -523,7 +525,7 @@
   &__fieldset--achives {
 
     padding-top: 115px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 
     @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
       order: 2;

@@ -85,13 +85,15 @@
     @media (min-width: $desktop-width) {
       width: 940px;
       margin: 0 auto;
-      margin-bottom: 0px;
+      margin-bottom: 0;
       padding-left: 74px;
       padding-right: 74px;
       position: relative;
-      &::after, &::before {
+
+      &::after,
+      &::before {
         position: absolute;
-        content: '';
+        content: "";
         width: 22px;
         height: 41px;
         top: 50%;
@@ -115,7 +117,6 @@
       display: flex;
       flex-direction: column;
     }
-
   }
 
   &__image {
