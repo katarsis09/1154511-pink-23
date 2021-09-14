@@ -56,14 +56,15 @@
     text-align: center;
     padding-top: 15px;
     padding-bottom: 16px;
-    border-top: 1px solid rgba(255,255,255,.15);
-    border-bottom: 1px solid #000;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid #000000;
 
     @media (min-width: $desktop-width) {
       line-height: 18px;
       font-weight: 400;
       box-shadow: none;
       padding-bottom: 11px;
+      border-top: none;
     }
   }
 

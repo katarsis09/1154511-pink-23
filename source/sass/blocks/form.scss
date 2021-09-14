@@ -85,7 +85,7 @@
   }
 
   &__legend {
-    white-space: nowrap;
+    //white-space: nowrap;
     font-size: 14px;
     line-height: 20px;
     display: block;
@@ -115,9 +115,14 @@
       }
     }
 
+    &--text {
+      width: 218px;
+    }
+
     &--select {
       @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
         top: 37px;
+        width: 218px;
       }
 
       @media (min-width: $desktop-width) {
@@ -128,9 +133,13 @@
     }
 
     &--app {
+
+      width: 218px;
+
       @media (min-width: $tablet-width) {
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 8px;
+        padding-right: 8px;
+        width: 350px;
       }
     }
   }
@@ -155,7 +164,7 @@
       background-color: #f2f2f2;
       position: relative;
       padding-top: 111px;
-      padding-bottom: 26px;
+      padding-bottom: 39px;
 
       @media (min-width: $tablet-width) {
         background-color: #ffffff;
@@ -351,12 +360,12 @@
     display: flex;
     align-items: center;
 
+    margin-bottom: 46px;
 
     &:not(:last-child) {
       @media (min-width: $tablet-width) {
-
+        margin-bottom: 42px;
       }
-      margin-bottom: 42px;
     }
 
     &--app {
@@ -371,7 +380,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 33px;
+    margin-right: 22px;
     background-color: #ffffff;
 
     @media (min-width: $tablet-width) {
@@ -394,6 +403,11 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    margin-right: 30px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 20px;
+    }
 
     &::after {
       display: flex;
