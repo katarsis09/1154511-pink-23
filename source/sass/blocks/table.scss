@@ -24,10 +24,11 @@
 
     @media (min-width: $tablet-width) {
       height: 45px;
-      width: 152px;
+      width: 154px;
       display: block;
       padding-left: 0;
       padding-right: 0;
+      padding-top: 11px;
     }
 
     @media (min-width: $desktop-width) {
@@ -57,6 +58,7 @@
       font-size: 14px;
       line-height: 30px;
       padding-left: 15px;
+      padding-top: 8px;
     }
 
     @media (min-width: $desktop-width) {
@@ -87,6 +89,18 @@
       left: -26px;
       transform: rotate(-45deg);
     }
+
+    @media (min-width: $tablet-width) {
+      height: 81px;
+      padding-left: 10px;
+
+      &--badge::after {
+        top: 14px;
+        left: -32px;
+        font-size: 13px;
+      }
+
+    }
   }
 
   &__price {
@@ -115,13 +129,11 @@
     @media (min-width: $tablet-width) {
       font-size: 16px;
       line-height: 30px;
-
       margin-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
       font-size: 18px;
-      font-weight: 30px;
       padding-top: 23px;
     }
   }
