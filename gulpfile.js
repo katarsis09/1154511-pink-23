@@ -7,6 +7,7 @@ const autoprefixer = require("autoprefixer");
 const htmlmin = require('gulp-htmlmin');
 const jsmin = require('gulp-jsmin');
 const del = require('del');
+const imagemin = require('gulp-imagemin');
 const sync = require("browser-sync").create();
 
 // Styles
@@ -46,6 +47,20 @@ const scripts = () => {
 }
 
 exports.scripts = scripts;
+
+// Images
+
+const images = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(imagemin([
+      imagemin.mozjpeg({
+        progressive: true
+      })
+    ]))
+    .pipe(gulp.dest("build/img"))
+}
+
+exports.images = images;
 
 
 // Copy
@@ -89,7 +104,8 @@ const reload = done => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles", reload));
+  // gulp.watch("source/sass/**/*.scss", gulp.series("styles", reload));
+  gulp.watch("source/sass/**/*.scss").on('change', styles);
   gulp.watch("source/*.html", gulp.series(html, reload));
   gulp.watch("source/js/*.js", gulp.series(scripts))
 }
@@ -109,7 +125,8 @@ const build = gulp.series(
     html,
     styles,
     scripts,
-    copy
+    copy,
+    images
   )
 );
 exports.build = build;
@@ -120,7 +137,8 @@ exports.default = gulp.series(
     styles,
     html,
     scripts,
-    copy
+    copy,
+    images
   ),
   gulp.series(
     server,

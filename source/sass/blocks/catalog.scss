@@ -102,7 +102,6 @@
     @media (min-width: $desktop-width) {
       padding-left: 10px;
       width: 245px;
-      //padding-bottom: 13px;
     }
   }
 
@@ -147,12 +146,12 @@
     margin: 0 auto;
     padding-bottom: 43px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 23px;
     width: 280px;
 
     @media (min-width: $tablet-width) {
       font-size: 18px;
-      padding-top: 41px;
+      padding-top: 44px;
       width: 450px;
       padding-bottom: 70px;
     }
@@ -192,11 +191,6 @@
       }
     }
   }
-
-  //&__item:not(:first-child) {
-  //  padding-left: 20px;
-  // padding-right: 20px;
-  //}
 
   &__wrapper {
     background-color: #f2f2f2;

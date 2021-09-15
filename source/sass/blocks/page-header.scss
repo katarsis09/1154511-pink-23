@@ -3,7 +3,6 @@
 .page-header {
 
   background-repeat: no-repeat;
-  //background-size: contain;
   background-position: 50% 0%;
 
   @media (min-width: 500px) and (max-width: $tablet-width) {
@@ -51,6 +50,8 @@
       width: 147px;
       padding-bottom: 8px;
       height: 48px;
+      position: relative;
+      top: -4px;
     }
   }
 
@@ -92,7 +93,7 @@
 
       background-image: url("../img/phone_tablet.png");
       background-position: 84% 74px;
-      padding-bottom: 117px;
+      padding-bottom: 114px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/phone_tablet@2x.png");
@@ -103,7 +104,7 @@
     @media (min-width: $desktop-width) {
       padding-left: 130px;
       padding-bottom: 125px;
-      padding-top: 100px;
+      padding-top: 99px;
       grid-template-rows: auto;
       background-image: url("../img/phone_desktop.png");
       background-position: 146px 98px;

@@ -85,7 +85,6 @@
   }
 
   &__legend {
-    //white-space: nowrap;
     font-size: 14px;
     line-height: 20px;
     display: block;
@@ -402,10 +401,15 @@
     }
   }
 
-  &__item input:checked ~ &__choise {
+  &__item input:checked ~ .form__select > &__choise {
     &::after {
       content: "";
     }
+  }
+
+  &__item &__select {
+    display: flex;
+    align-items: center;
   }
 
   &__choise--radio {
@@ -543,7 +547,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-bottom: 12px;
+      padding-bottom: 8px;
 
       .form__list {
         display: grid;
@@ -582,7 +586,7 @@
     padding-top: 0;
 
     @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
-      padding-bottom: 20px;
+      padding-bottom: 28px;
       order: 6;
     }
 
@@ -597,7 +601,7 @@
       align-items: center;
       padding-left: 0;
       padding-right: 0;
-      padding-bottom: 48px;
+      padding-bottom: 56px;
     }
   }
 
@@ -614,7 +618,7 @@
 
     @media (min-width: $desktop-width) {
       min-height: 118px;
-      padding-bottom: 52px;
+      padding-bottom: 57px;
     }
 
     &::placeholder {

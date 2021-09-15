@@ -139,7 +139,7 @@
     padding-bottom: 70px;
 
     @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
-      padding-bottom: 82px;
+      padding-bottom: 81px;
       order: 1;
     }
 
@@ -192,7 +192,6 @@
       grid-column-end: 4;
       grid-row-start: 3;
       grid-row-end: 4;
-      //transform: translateY(-118px);
     }
   }
 
@@ -278,6 +277,8 @@
   }
 
   &__offer {
+    line-height: 30px;
+
     @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
       padding-top: 10px;
     }
@@ -286,11 +287,12 @@
       width: 345px;
       display: block;
       margin: 0 auto;
+      line-height: 54px;
     }
 
     @media (min-width: $desktop-width) {
       width: 470px;
-      padding-right: 18 px;
+      line-height: 68px;
     }
   }
 }

@@ -1,7 +1,6 @@
 .site-list {
 
   position: relative;
-  //display: block;
   padding-left: 0;
   padding-right: 0;
   font-size: 18px;
@@ -32,9 +31,10 @@
   }
 
   &__item--active:not([href]) {
-    border-bottom: 2px solid #ffffff;
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid #ffffff;
+    }
   }
-
 
   &__link {
     @media (min-width: $desktop-width) {
@@ -63,8 +63,9 @@
       line-height: 18px;
       font-weight: 400;
       box-shadow: none;
-      padding-bottom: 11px;
+      padding-bottom: 14px;
       border-top: none;
+      border-bottom: none;
     }
   }
 

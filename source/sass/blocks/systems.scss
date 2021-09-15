@@ -1,0 +1,7 @@
+.systems {
+  &__android {
+    @media (min-width: $tablet-width) {
+      margin-left: 5px;
+    }
+  }
+}

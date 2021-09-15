@@ -37,10 +37,10 @@
 
     @media (min-width: $tablet-width) {
       padding-top: 93px;
-
       font-size: 40px;
       line-height: 48px;
-      width: 180px;
+      width: 202px;
+      padding-left: 10px;
     }
 
     @media (min-width: $desktop-width) {
@@ -98,7 +98,7 @@
       padding-bottom: 128px;
 
       @media (min-width: $desktop-width) {
-        padding-top: 62px;
+        padding-top: 60px;
         padding-bottom: 89px;
       }
     }

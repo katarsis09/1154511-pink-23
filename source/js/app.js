@@ -27,3 +27,11 @@ if (form) {
     })
   })
 }
+
+// delete no-js class if js is enable
+
+const menu = document.querySelector('.main-nav')
+
+if (menu) {
+  menu.classList.remove('main-nav--nojs')
+}

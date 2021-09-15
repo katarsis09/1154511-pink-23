@@ -19,7 +19,6 @@
 
   &__item {
     @media (min-width: $tablet-width) {
-      //margin-top: 67px;
       padding-top: 14px;
     }
 
@@ -39,6 +38,8 @@
       order: 2;
       font-size: 20px;
       line-height: 30px;
+      padding-left: 1px;
+      padding-top: 1px;
     }
 
     @media (min-width: $desktop-width) {
@@ -79,7 +80,7 @@
       font-size: 18px;
       order: 1;
       padding-bottom: 35px;
-      padding-top: 27px;
+      padding-top: 31px;
     }
 
     @media (min-width: $desktop-width) {
@@ -89,6 +90,7 @@
       padding-left: 74px;
       padding-right: 74px;
       position: relative;
+      padding-top: 27px;
 
       &::after,
       &::before {

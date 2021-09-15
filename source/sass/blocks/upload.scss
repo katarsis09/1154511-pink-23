@@ -1,6 +1,14 @@
 .upload {
   background-color: #f2f2f2;
-  padding: 20px 20px 41px 20px;
+  padding: 20px 20px 47px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 86px;
+  }
 
 
   &__gradient {
@@ -38,10 +46,12 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
+    padding-right: 20px;
 
     @media (min-width: $tablet-width) {
       width: 300px;
       height: 400px;
+      padding-right: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -55,14 +65,17 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    padding-right: 20px;
 
     @media (min-width: $mobile-width-only) {
       padding-top: 39px;
+      padding-right: 20px;
     }
 
     @media (min-width: $tablet-width) {
       padding-top: 4px;
       padding-left: 37px;
+      padding-right: 12px;
     }
 
     @media (min-width: $desktop-width) {
@@ -109,7 +122,7 @@
 
   &__list {
     align-items: center;
-    padding-right: 16px;
+    padding-right: 32px;
 
     @media (min-width: $mobile-width-only) {
       display: flex;
@@ -128,7 +141,7 @@
       flex-direction: column;
       justify-content: flex-start;
       padding-top: 12px;
-      padding-left: 37px;
+      padding-left: 41px;
       padding-bottom: 39px;
 
       @media (min-width: $desktop-width) {
@@ -145,7 +158,6 @@
 
     @media (min-width: $desktop-width) {
       margin-left: -36px;
-      // margin-top: -26px;
     }
 
 
@@ -221,7 +233,7 @@
       background-color: #283645;
       opacity: 0.1;
       left: -40px;
-      top: 34px;
+      top: 38px;
 
       @media (min-width: $desktop-width) {
         width: calc(100% + 121px);
@@ -267,13 +279,15 @@
     height: 2px;
     background: #283645;
     width: 240px;
+    margin-right: 22px;
 
     @media (min-width: $mobile-width-only) {
       width: 240px;
     }
 
     @media (min-width: $tablet-width) {
-      width: 202px;
+      width: 206px;
+      margin-right: -14px;
     }
 
     @media (min-width: $desktop-width) {
