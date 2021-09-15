@@ -46,6 +46,10 @@
       justify-content: flex-end;
       width: 155px;
     }
+
+    @media (min-width: $desktop-width) {
+      justify-content: flex-start;
+    }
   }
 
   &__logotype {

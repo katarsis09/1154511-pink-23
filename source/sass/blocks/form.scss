@@ -31,6 +31,7 @@
 
       width: 800px;
       padding-bottom: 71px;
+      line-height: 29px;
     }
   }
 
@@ -494,6 +495,10 @@
     @media (min-width: $tablet-width) {
       text-align: right;
     }
+
+    @media (min-width: $desktop-width) {
+      font-size: 14px;
+    }
   }
 
   &__star {
@@ -555,6 +560,22 @@
         grid-template-rows: 81px;
         align-items: start;
       }
+
+      .form__item {
+        &:nth-child(2) {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+
+        &:nth-child(4) {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+      }
     }
   }
 
@@ -579,6 +600,7 @@
     @media (min-width: $desktop-width) {
       padding-bottom: 38px;
       padding-top: 29px;
+      margin-bottom: 63px;
     }
   }
 
@@ -623,6 +645,7 @@
     @media (min-width: $desktop-width) {
       min-height: 118px;
       padding-bottom: 57px;
+      padding-top: 18px;
     }
 
     &::placeholder {

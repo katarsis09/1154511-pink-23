@@ -4,4 +4,30 @@
       margin-left: 5px;
     }
   }
+
+  &__item {
+    &--iphone {
+      @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
+        margin-left: -3px;
+      }
+    }
+
+    &--android {
+      @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
+        margin-bottom: -4px;
+      }
+    }
+
+    &--windows {
+      @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
+        margin-top: 11px;
+        margin-right: -3px;
+      }
+
+      @media (min-width: $tablet-width) {
+        margin-top: 1px;
+        margin-right: -6px;
+      }
+    }
+  }
 }

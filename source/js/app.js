@@ -20,7 +20,7 @@ const modalReject = document.querySelector('.modal--reject')
 if (form) {
   form.addEventListener('submit', (e) => {
     e.preventDefault()
-    modalSuccess.style.display = 'flex'
+    modalSuccess.style.display = 'block'
     const btn = modalSuccess.querySelector('button')
     btn.addEventListener('click', () => {
       modalSuccess.style.display = 'none'
