@@ -1,13 +1,40 @@
 .social {
   &__list {
     display: flex;
-    width: 172px;
+    width: 175px;
     justify-content: space-between;
-    margin-bottom: 53px;
+    margin-bottom: 37px;
 
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
+      padding-left: 10px;
+      width: 185px;
     }
+
+    &--form {
+      @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
+        margin-bottom: 38px;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    width: 51px;
+    height: 51px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgba(40, 54, 69, 0.1);
+    border-radius: 50%;
+    color: #d22856;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__icon {
+    display: block;
+    margin: auto;
   }
 }

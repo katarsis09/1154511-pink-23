@@ -1,6 +1,35 @@
 .slope {
   background-image: url("../img/grey-bg.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 0%;
+  background-size: 100%;
+  background-position: 50% 81%;
+
+  @media (min-width: $tablet-width) {
+    background-size: cover;
+    background-position: 50% -16%;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-position: 50% -16%;
+  }
+
+
+  &.price {
+    background-position: 50% 14%;
+    background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      background-position: 50% 7%;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 50% 5%;
+    }
+  }
+
+  &.advantages {
+    @media (min-width: $desktop-width) {
+      background-position: 50% -7%;
+    }
+  }
 }

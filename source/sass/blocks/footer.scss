@@ -1,4 +1,12 @@
 .footer {
+
+  padding-top: 33px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+
+
   &__social {
     display: flex;
 
@@ -7,19 +15,24 @@
     margin: 0 auto;
     width: 172px;
 
-    padding-top: 40px;
+    padding-top: 0;
     padding-bottom: 40px;
 
 
     @media (min-width: $tablet-width) {
       flex-direction: row;
       justify-content: space-between;
-      width: 620px;
-      padding: 36px 10px 40px 10px;
+      align-items: stretch;
+      width: 644px;
+      padding: 4px 10px 40px 10px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 940px;
+      width: 947px;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 15px;
+      margin-top: 0;
     }
   }
 
@@ -28,17 +41,43 @@
     width: 130px;
     justify-content: space-between;
     align-items: center;
+
+    @media (min-width: $tablet-width) {
+      justify-content: flex-end;
+      width: 155px;
+    }
+
+    @media (min-width: $desktop-width) {
+      justify-content: flex-start;
+    }
   }
 
   &__logotype {
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    gap: 13px;
     justify-content: space-between;
     width: 145px;
-    margin-bottom: 41px;
+    margin-bottom: 35px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: relative;
+      left: 3px;
+      top: -3px;
+    }
+  }
+
+  &__logo {
+    width: 145px;
+    height: 40px;
+
+    @media (min-width: $desktop-width) {
+      width: 147px;
+      height: 40px;
     }
   }
 }

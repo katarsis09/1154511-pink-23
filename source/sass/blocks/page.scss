@@ -24,16 +24,23 @@
     grid-row-end: 2;
 
     @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
-      padding-top: 29px;
+      padding-top: 23px;
     }
   }
 
   &__slogan--index {
+    @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
+      padding-bottom: 314px;
+      width: 280px;
+    }
+
+
     @media (min-width: $tablet-width) {
       padding-top: 93px;
       font-size: 40px;
       line-height: 48px;
-      width: 245px;
+      width: 202px;
+      padding-left: 10px;
     }
 
     @media (min-width: $desktop-width) {
@@ -48,6 +55,14 @@
 
 
   &__slogan--form {
+    @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
+      padding-top: 30px;
+      width: 270px;
+      line-height: 32px;
+      padding-bottom: 45px;
+    }
+
+
     @media (min-width: 500px) and (max-width: $tablet-width) {
       padding-top: 36px;
       padding-bottom: 51px;
@@ -55,8 +70,8 @@
 
 
     @media (min-width: $tablet-width) {
-      padding-top: 80px;
-      padding-bottom: 75px;
+      padding-top: 67px;
+      padding-bottom: 60px;
       width: 620px;
       margin: 0 auto;
       font-size: 50px;
@@ -64,26 +79,28 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 74px;
-      padding-bottom: 104px;
+      padding-top: 59px;
+      padding-bottom: 89px;
       width: 747px;
     }
   }
 
   &__slogan--catalog {
-    padding-bottom: 84px;
-    padding-top: 36px;
+    padding-bottom: 79px;
+    padding-top: 30px;
+    line-height: 31px;
+    width: 200px;
 
     @media (min-width: $tablet-width) {
       font-size: 50px;
       line-height: 68px;
-
-      padding-top: 81px;
-      padding-bottom: 143px;
+      width: 380px;
+      padding-top: 68px;
+      padding-bottom: 128px;
 
       @media (min-width: $desktop-width) {
-        padding-top: 74px;
-        padding-bottom: 104px;
+        padding-top: 60px;
+        padding-bottom: 89px;
       }
     }
   }

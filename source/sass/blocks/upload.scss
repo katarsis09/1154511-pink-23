@@ -1,9 +1,30 @@
 .upload {
   background-color: #f2f2f2;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 41px;
-  padding-top: 20px;
+  padding: 20px 20px 47px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 86px;
+  }
+
+
+  &__gradient {
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+    padding-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 130px;
+    margin-right: 130px;
+    padding-bottom: 34px;
+  }
 
   &__button {
     color: #d22856;
@@ -13,8 +34,8 @@
 
     border-radius: 32px;
     text-decoration: none;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     width: 100%;
   }
 
@@ -25,10 +46,16 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
+    padding-right: 20px;
 
     @media (min-width: $tablet-width) {
       width: 300px;
       height: 400px;
+      padding-right: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 57px;
     }
   }
 
@@ -38,18 +65,38 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    padding-right: 20px;
 
     @media (min-width: $mobile-width-only) {
-      padding-top: 30px;
+      padding-top: 39px;
+      padding-right: 20px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 4px;
+      padding-left: 37px;
+      padding-right: 12px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 91px;
     }
   }
 
   &__publish {
     border: 3px solid #d22856;
+    margin-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      width: 260px;
+      margin-bottom: 23px;
+    }
 
     @media (min-width: $desktop-width) {
       display: inline-block;
       width: 183px;
+      margin-left: -38px;
+      margin-right: 39px;
     }
   }
 
@@ -69,17 +116,20 @@
 
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: auto;
     }
   }
 
   &__list {
+    align-items: center;
+    padding-right: 32px;
+
     @media (min-width: $mobile-width-only) {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
       position: relative;
-      padding-bottom: 50px;
-      padding-top: 43px;
+      padding-bottom: 77px;
+      padding-top: 40px;
     }
 
     @media (min-width: $tablet-width) {
@@ -87,19 +137,34 @@
       grid-column-end: 3;
       grid-row-start: 1;
       grid-row-end: 2;
-
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 12px;
+      padding-left: 41px;
+      padding-bottom: 39px;
 
-      height: 180px;
+      @media (min-width: $desktop-width) {
+        margin-right: 13px;
+        justify-content: flex-start;
+        padding-top: 0;
+      }
     }
   }
 
   &__label {
     font-size: 0;
-    width: 44px;
-    height: 44px;
     display: block;
+
+    @media (min-width: $desktop-width) {
+      margin-left: -36px;
+    }
+
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
 
     svg path {
       fill: #283645;
@@ -108,6 +173,36 @@
       @media (min-width: $tablet-width) {
         fill: #d22856;
         opacity: 1;
+      }
+    }
+
+    &--fill {
+      width: 48px;
+      height: 43px;
+
+      @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+        width: 24px;
+        height: 22px;
+      }
+    }
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+
+      @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &--crop {
+      width: 44px;
+      height: 44px;
+
+      @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+        width: 22px;
+        height: 22px;
       }
     }
   }
@@ -128,26 +223,54 @@
   }
 
   &__range {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: calc(100% + 80px);
+      height: 1px;
+      background-color: #283645;
+      opacity: 0.1;
+      left: -40px;
+      top: 38px;
+
+      @media (min-width: $desktop-width) {
+        width: calc(100% + 121px);
+        left: -93px;
+      }
+    }
+
     @media (min-width: $mobile-width-only) {
       display: none;
       position: absolute;
-      top: 122px;
+      top: 125px;
       left: 50%;
       transform: translateX(-50%);
     }
 
     @media (min-width: $tablet-width) {
       display: block;
-      position: absolute;
       top: 50%;
       transform: translate(-50%, -50%);
-      left: 50%;
+      left: 60%;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 52%;
     }
   }
 
   &__item {
     @media (min-width: $tablet-width) {
       position: relative;
+      width: 100%;
+      margin-bottom: 51px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 44px;
+      margin-bottom: 28px;
     }
   }
 
@@ -156,13 +279,15 @@
     height: 2px;
     background: #283645;
     width: 240px;
+    margin-right: 22px;
 
     @media (min-width: $mobile-width-only) {
       width: 240px;
     }
 
     @media (min-width: $tablet-width) {
-      width: 202px;
+      width: 206px;
+      margin-right: -14px;
     }
 
     @media (min-width: $desktop-width) {
@@ -182,19 +307,61 @@
 
     &--crop {
 
-      left: 83%;
+      left: 81%;
     }
 
     &--fill {
 
-      left: 19%;
+      left: 12%;
     }
 
     &--contrast {
 
-      left: 50%;
+      left: 47%;
     }
   }
+
+  &__svg {
+    &--crop {
+      @media (min-width: $tablet-width) {
+        width: 22px;
+        height: 22px;
+      }
+
+
+      @media (min-width: $desktop-width) {
+        width: 44px;
+        height: 44px;
+      }
+    }
+
+
+    &--fill {
+      @media (min-width: $tablet-width) {
+
+        width: 24px;
+        height: 22px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 48px;
+        height: 43px;
+      }
+    }
+
+    &--contrast {
+      @media (min-width: $tablet-width) {
+        width: 16px;
+        height: 16px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
 
   &__toggle:active {
     background-color: #d22856;

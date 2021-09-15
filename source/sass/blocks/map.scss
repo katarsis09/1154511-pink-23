@@ -1,33 +1,50 @@
 .map {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    transform: translateY(-53px);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 33px;
+    background-image: url("../img/triangle_white_footer.svg");
+    background-size: 100% 33px;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      height: 75px;
+      background-size: 100% 73px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/footer-tr-desk.svg");
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      height: 123px;
+    }
+  }
+
   &__iframe {
+    width: 100%;
+
     @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
       height: 200px;
     }
-
 
     @media (min-width: $tablet-width) {
       height: 374px;
     }
 
     @media (min-width: $desktop-width) {
-      height: 502px;
+      height: 522px;
     }
   }
-
-
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //background-position: 50% 50%;
-
-  //@media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
-  // background-image: url("../img/map_mobile.jpg");
-  //}
-
-  // @media (min-width: $tablet-width) {
-  //  background-image: url("../img/map_tablet.jpg");
-  //}
-
-  // @media (min-width: $desktop-width) {
-  //  background-image: url("../img/map_desktop.jpg");
-  //}
 }

@@ -3,24 +3,29 @@
 
 
   @media (min-width: $desktop-width) {
-    margin-top: 150px;
+    padding-top: 69px;
   }
 
   &__wrapper {
     padding-left: 20px;
     padding-right: 20px;
+
+    @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
+      transform: translateY(-42px);
+      background: #ffffff;
+      padding-top: 42px;
+    }
   }
 
   &__item {
     @media (min-width: $tablet-width) {
-      margin-top: 67px;
+      padding-top: 14px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: 46px;
+      margin-top: 12px;
     }
   }
-
 
   &__author-name {
 
@@ -31,6 +36,10 @@
 
     @media (min-width: $tablet-width) {
       order: 2;
+      font-size: 20px;
+      line-height: 30px;
+      padding-left: 1px;
+      padding-top: 1px;
     }
 
     @media (min-width: $desktop-width) {
@@ -61,18 +70,47 @@
     font-size: 14px;
     line-height: 30px;
     padding-top: 31px;
-    padding-bottom: 44px;
+    padding-bottom: 31px;
+
+    @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
+      padding-top: 16px;
+    }
 
     @media (min-width: $tablet-width) {
       font-size: 18px;
       order: 1;
-      padding-bottom: 36px;
+      padding-bottom: 35px;
+      padding-top: 31px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 680px;
+      width: 940px;
       margin: 0 auto;
-      margin-bottom: 35px;
+      margin-bottom: 0;
+      padding-left: 74px;
+      padding-right: 74px;
+      position: relative;
+      padding-top: 27px;
+
+      &::after,
+      &::before {
+        position: absolute;
+        content: "";
+        width: 22px;
+        height: 41px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &::before {
+        left: 0;
+        background-image: url("../img/arrow-left.svg");
+      }
+
+      &::after {
+        right: 0;
+        background-image: url("../img/arrow-right.svg");
+      }
     }
   }
 
@@ -84,6 +122,10 @@
   }
 
   &__image {
+    @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
+      display: none;
+    }
+
     @media (min-width: $tablet-width) {
       display: none;
     }

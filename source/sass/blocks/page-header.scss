@@ -3,7 +3,6 @@
 .page-header {
 
   background-repeat: no-repeat;
-  //background-size: contain;
   background-position: 50% 0%;
 
   @media (min-width: 500px) and (max-width: $tablet-width) {
@@ -38,6 +37,10 @@
     }
   }
 
+  &__main-nav {
+    order: 2;
+  }
+
 
   &__logo-image {
     display: block;
@@ -49,6 +52,10 @@
 
     @media (min-width: $desktop-width) {
       width: 147px;
+      padding-bottom: 8px;
+      height: 48px;
+      position: relative;
+      top: -4px;
     }
   }
 
@@ -58,16 +65,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 23px;
-    padding-right: 16px;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding: 21px 16px 21px 23px;
+
+    @media (min-width: $tablet-width) {
+      padding: 26px 22px 44px 20px;
+    }
+
 
     @media (min-width: $desktop-width) {
-      padding-left: 130px;
-      padding-right: 130px;
-      padding-top: 30px;
-      padding-bottom: 31px;
+      align-items: end;
+      padding: 30px 118px 31px 130px;
     }
   }
 
@@ -89,8 +96,8 @@
       grid-template-rows: auto;
 
       background-image: url("../img/phone_tablet.png");
-      background-position: 84% 80px;
-      padding-bottom: 123px;
+      background-position: 84% 74px;
+      padding-bottom: 114px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/phone_tablet@2x.png");
@@ -100,15 +107,15 @@
 
     @media (min-width: $desktop-width) {
       padding-left: 130px;
-      padding-bottom: 127px;
-      padding-top: 100px;
+      padding-bottom: 125px;
+      padding-top: 99px;
       grid-template-rows: auto;
       background-image: url("../img/phone_desktop.png");
-      background-position: 84% 80px;
+      background-position: 146px 98px;
+      background-size: 1050px auto;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/phone_desktop@2x.png");
-        background-size: 1200px auto;
       }
     }
   }
