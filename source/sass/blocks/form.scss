@@ -286,13 +286,13 @@
 
       &--phone {
         &::after {
-          background: url("../../img/phone_icon.png") no-repeat 50% 50% #e5e5e5;
+          background: url("../img/phone_icon.png") no-repeat 50% 50% #e5e5e5;
         }
       }
 
       &--email {
         &::after {
-          background: url("../../img/mail_icon.svg") no-repeat 50% 50% #e5e5e5;
+          background: url("../img/mail_icon.svg") no-repeat 50% 50% #e5e5e5;
         }
 
         .form__input {
